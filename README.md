@@ -6,7 +6,7 @@ This is a README file for the SE25 project's GitHub repository. This README is d
 
 # SE25 – Robot Simulation and Control System
 
-![CI/CD Build Status](https://github.com/your-username/se25-robot-control/actions/workflows/main.yml/badge.svg)
+<!-- ![CI/CD Build Status](https://github.com/your-username/se25-robot-control/actions/workflows/main.yml/badge.svg) -->
 
 This repository contains the source code and documentation for the **SE25 - Robot Simulation and Control System**, a project for the Project-Based Learning (PBL) course in Software Engineering.
 
