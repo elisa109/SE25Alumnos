@@ -155,12 +155,12 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 | :--- | :--- | :--- |
 | Project Manager | Ricardo Sanz | @rsanz |
 | System Architect | Ricardo Sanz | @rsanz |
-| Lead Simulation Engineer | Javier Pulido | @Pulido1822 |
-| Lead Control Engineer | Pablo Fraile | @PabloFraile |
-| Tooling Lead | Adela Zapatera | @adelazapatera |
-| QA Lead | Daniel D'Alascio | @danieldalascio |
+| Requirements Lead | Javier Pulido | @Pulido1822 |
+| Design Lead | Pablo Fraile | @PabloFraile |
+| Impleemntation Lead | Adela Zapatera | @adelazapatera |
 | Integration Lead | Victor Rodríguez | @Victor23RR |
+| QA Lead | Daniel D'Alascio | @danieldalascio |
 | Documentation Manager | Elisa Oyaregui | @elisa109 |
-| Configuration Manager | [Student Name] | [@github-username] |
+| Configuration Manager | Rodrigo Condato | @rodrigocondado |
 
 ---
