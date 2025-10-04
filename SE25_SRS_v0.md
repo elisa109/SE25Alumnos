@@ -13,7 +13,6 @@
    2.2 [Product Functions](#22-product-functions)  
    2.3 [User Characteristics](#23-user-characteristics)  
    2.4 [Constraints](#24-constraints)  
-   2.5 [Assumptions and Dependencies](#25-assumptions-and-dependencies)  
 
 4. [System Requirements](#3-system-requirements)  
    - Functional Requirements (REQ-F-XXX)  
@@ -87,8 +86,8 @@ The system will act as a standalone 3D simulation platform. The SE25 system is d
    - Receives and displays the robot’s current state in real time.  
 
 The communication between these subsystems is implemented using **ROS 2 Jazzy Jalisco**, enabling a modular publish–subscribe architecture. For example:  
-- `/robot_state` topic: simulation publishes joint positions and end-effector pose.  
-- `/joint_commands` topic: control interface sends joint commands to the simulation.  
+- `/RobotState` topic: simulation publishes joint positions and end-effector pose.  
+- `/ControlCommands` topic: control interface sends joint commands to the simulation.  
 
 Thus, the system integrates **simulation accuracy** with **user interactivity** while adhering to real-time performance constraints.
 <img width="2335" height="1240" alt="image" src="https://github.com/user-attachments/assets/3f89484b-7c49-4cee-8de7-dac740b4d044" />
@@ -96,26 +95,275 @@ Thus, the system integrates **simulation accuracy** with **user interactivity** 
 
 
 ### 2.2 Product Functions
-- 3D rendering of environment and robots  
-- Camera navigation  
-- Basic simulation controls  
+At a high level, the SE25 system will provide the following functions:
+- **System Initialization:** Load the robotic arm model (URDF) into the simulation environment.  
+- **Manual Control:** Allow users to jog individual joints of the robotic arm via the GUI.  
+- **Automated Path Execution:** Accept a sequence of target poses and execute them as trajectories in the simulation.  
+- **Collision Detection:** Identify collisions between the robotic arm and environment obstacles.  
+- **Emergency Response:** Halt motion immediately upon collision or detected fault.  
+- **Visualization:** Display real-time robot pose and environment state to the user.   
 
 ### 2.3 User Characteristics
-- Developers, researchers, and testers with basic robotics knowledge  
+The system is intended for three primary categories of stakeholders:  
+- **Students (Developers):**  
+  - Background: Undergraduate software engineering students.  
+  - Need: A clear, structured project that allows them to apply concepts from ISO 12207, real-time programming, and software engineering best practices.  
+- **Instructor (Customer):**  
+  - Role: Defines the project requirements and evaluates deliverables.  
+  - Need: A project that fulfills course objectives, ensures traceability of requirements, and demonstrates applied knowledge.  
+- **End-User (Hypothetical Researcher):**  
+  - Background: Robotics researcher.  
+  - Need: A reliable, flexible, and user-friendly tool for testing control algorithms without requiring physical robots.  
 
 ### 2.4 Constraints
-- Should run on standard consumer hardware  
-- Should be cross-platform (Windows/Linux/Mac)  
+The development and execution of the system are subject to the following constraints:  
+- **Platform Constraint:** The system must run on **Ubuntu 24.04 LTS**.  
+- **Programming Languages:** The implementation shall use **C/C++**.  
+- **Concurrency:** Multithreading must rely on **POSIX threads (pthreads)**.  
+- **Middleware:** All communication between components must use **ROS 2 Jazzy Jalisco**.  
+- **Version Control:** All source code shall be version controlled using **Git&GitHub**.  
+- **Performance:** The system shall achieve a minimum of 30 FPS rendering rate. 
 
-### 2.5 Assumptions and Dependencies
-- Relies on a physics engine for simulation accuracy  
 
 ---
 
 ## 3. System Requirements
 
 ### 3.1 Functional Requirements
+### **Requisitos Funcionales**
 
+---
+
+#### **Requirement ID: REQ-F-001**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | 3D Simulation Environment |
+| **Description** | The system shall provide a 3D simulation environment for a 6-axis robotic arm. |
+| **Type** | Functional |
+| **Source** | Instructor (Customer) |
+| **Rationale** |A 3D simulation environment allows users to visualize and test robotic arm operations without the risk of damaging physical hardware. It provides a safe and cost-effective platform for prototyping, debugging motion algorithms, and training personnel. Additionally, it ensures that system behaviors can be evaluated under controlled scenarios, improving design reliability and reducing development time |
+| **Priority** |Must have |
+| **Verification Method**|1. Launch the simulation application.
+2. Verify that a 3D environment is displayed correctly.
+3. Confirm that the 6-axis robotic arm is fully rendered.
+4. Operate each joint and validate correct kinematic behavior.
+5. Test collision detection and ensure visual feedback responds accurately.
+6. Confirm simulation performance is smooth under typical scenarios |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-F-002**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Carga de modelo URDF |
+| **Description** | El sistema deberá permitir a un usuario cargar un modelo URDF (Unified Robot Description Format) de un brazo robótico en la simulación. |
+| **Type** | Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-F-003**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Interfaz Gráfica de Usuario (GUI) |
+| **Description** | El sistema deberá proporcionar una interfaz gráfica de usuario (GUI) para controlar el brazo robótico. |
+| **Type** | Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-F-004**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Visualización de posición en tiempo real |
+| **Description** | La GUI deberá mostrar la posición y orientación en tiempo real del brazo robótico. |
+| **Type** | Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-F-005**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Control articular individual |
+| **Description** | El usuario deberá ser capaz de controlar cada articulación del brazo robótico de forma individual. |
+| **Type** | Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-F-006**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Definición y ejecución de secuencias de poses |
+| **Description** | El usuario deberá ser capaz de definir y ejecutar una secuencia de poses objetivo para el efector final del robot. |
+| **Type** | Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-F-007**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Detección de colisiones |
+| **Description** | El sistema deberá ser capaz de detectar colisiones entre el brazo robótico y obstáculos predefinidos en la simulación. |
+| **Type** | Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-F-008**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Parada por colisión |
+| **Description** | Tras la detección de una colisión, el sistema deberá detener inmediatamente el movimiento del robot. |
+| **Type** | Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+### **Requisitos No Funcionales**
+
+---
+
+#### **Requisito ID: REQ-N-001**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Latencia de comunicación |
+| **Description** | La comunicación entre la interfaz de operador y la simulación deberá tener una latencia inferior a 50 milisegundos. |
+| **Type** | No Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-N-002**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Tasa de fotogramas (Framerate) |
+| **Description** | El entorno de simulación deberá mantener una tasa de fotogramas de al menos 30 frames por segundo (FPS). |
+| **Type** | No Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-N-003**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Plataforma de desarrollo |
+| **Description** | El sistema deberá ser desarrollado usando C/C++ sobre un sistema operativo Linux. |
+| **Type** | No Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-N-004**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Framework de comunicación |
+| **Description** | El sistema deberá utilizar ROS 2 para toda la comunicación entre componentes. |
+| **Type** | No Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-N-005**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Interfaces para programación concurrente |
+| **Description** | El sistema deberá utilizar interfaces POSIX para tareas de programación concurrente. |
+| **Type** | No Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-N-006**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Control de versiones |
+| **Description** | Todo el código fuente deberá ser controlado en versiones utilizando Git. |
+| **Type** | No Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
+
+---
+
+#### **Requisito ID: REQ-N-007**
+| Atributo | Detalles |
+| :--- | :--- |
+| **Requirement Name** | Documentación del sistema |
+| **Description** | El sistema deberá ser documentado de acuerdo con el plan de documentación del proyecto. |
+| **Type** | No Funcional |
+| **Source** | Enunciado del Proyecto |
+| **Rationale** | |
+| **Priority** | |
+| **Verification Method**| |
+| **Dependencies** | |
+| **Status** | Propuesto |
 #### REQ-F-001: 3D Simulation Environment
 **ID:** REQ-F-001  
 **Type:** Functional  
@@ -134,20 +382,6 @@ The system shall provide a 3D simulation environment that includes:
 - Coordinate axes are displayed.  
 - Lighting can be adjusted by the user.  
 
----
-
-### 3.2 Non-Functional Requirements
-
-#### REQ-N-001: Performance
-**ID:** REQ-N-001  
-**Type:** Non-Functional  
-**Title:** Performance Requirement  
-**Description:**  
-The system shall render at a minimum of 30 FPS under standard simulation conditions.  
-
-**Rationale:** Ensures smooth and usable simulation.  
-**Dependencies:** REQ-F-001  
-**Acceptance Criteria:** Simulation runs at or above 30 FPS on reference hardware.  
 
 ---
 
