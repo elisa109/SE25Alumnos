@@ -152,15 +152,15 @@ The development and execution of the system are subject to the following constra
 #### **Requisito ID: REQ-F-002**
 | Atributo | Detalles |
 | :--- | :--- |
-| **Requirement Name** | Carga de modelo URDF |
-| **Description** | El sistema deberá permitir a un usuario cargar un modelo URDF (Unified Robot Description Format) de un brazo robótico en la simulación. |
-| **Type** | Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | URDF Model Loading |
+| **Description** | The system shall allow a user to load a URDF (Unified Robot Description Format) model of a robotic arm into the simulation.  |
+| **Type** | Functional |
+| **Source** | Instructor (Customer) |
+| **Rationale** | Allowing URDF model loading ensures that the simulation system is flexible and can accommodate various robotic arms without requiring hard-coded models. This capability enables users to experiment with different robotic designs, verify kinematics, and validate control strategies before deploying them on real hardware, thereby increasing versatility and reducing risk.  |
+| **Priority** |Must have |
+| **Verification Method**| 1. Open the model loading feature feature. <br>2. Select multiple URDF files representing different robotic arms. <br>3. Verify that each robot’s visual appearance, joints, and links are correctly displayed. <br>4. Check that joint movements correspond to defined kinematics. <br>5. Validate collision models respond correctly during simulation. <br>6. Ensure no errors or crashes occur during model loading. <br>7. Inspect logs to confirm proper parsing of XML structure. |
+| **Dependencies** |REQ-F-001 |
+| **Status** | Proposed |
 
 ---
 
@@ -168,14 +168,14 @@ The development and execution of the system are subject to the following constra
 | Atributo | Detalles |
 | :--- | :--- |
 | **Requirement Name** | Interfaz Gráfica de Usuario (GUI) |
-| **Description** | El sistema deberá proporcionar una interfaz gráfica de usuario (GUI) para controlar el brazo robótico. |
-| **Type** | Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Description** | The system shall provide a graphical user interface (GUI) for controlling the robotic arm. |
+| **Type** | Functional |
+| **Source** | Instructor (Customer) |
+| **Rationale** | A graphical user interface simplifies interaction with the robotic arm by providing intuitive controls for movement, configuration, and monitoring. It reduces the learning curve for new users, increases operational efficiency, and minimizes the risk of errors that could occur with manual command entry. A well-designed GUI also improves accessibility and supports rapid prototyping and testing.  |
+| **Priority** |Must have |
+| **Verification Method**|1. Launch the GUI and confirm all interface elements are visible and correctly labeled. <br>2. Operate each control (sliders, buttons, input fields) and verify robotic arm movement corresponds accurately. <br>3. Test saving and loading of configurations. <br>4. Verify emergency stop/reset functionality works. <br>5. Check that the GUI provides feedback for invalid commands or system errors. |
+| **Dependencies** |REQ-F-001|
+| **Status** | Proposed |
 
 ---
 
@@ -359,23 +359,6 @@ The development and execution of the system are subject to the following constra
 | **Verification Method**| |
 | **Dependencies** | |
 | **Status** | Propuesto |
-#### REQ-F-001: 3D Simulation Environment
-**ID:** REQ-F-001  
-**Type:** Functional  
-**Title:** 3D Simulation Environment  
-**Description:**  
-The system shall provide a 3D simulation environment that includes:  
-- A ground plane with configurable textures  
-- A global coordinate system (X, Y, Z axes)  
-- Adjustable lighting sources (ambient, directional, point lights)  
-- Camera navigation (pan, zoom, rotate)  
-
-**Rationale:** Provides a realistic test environment without physical prototypes.  
-**Dependencies:** REQ-N-001 (performance)  
-**Acceptance Criteria:**  
-- The environment loads with a ground plane visible.  
-- Coordinate axes are displayed.  
-- Lighting can be adjusted by the user.  
 
 
 ---
