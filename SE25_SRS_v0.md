@@ -191,19 +191,18 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requirement ID:REQ-F-005**
+#### **Requirement ID: REQ-F-005**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Control articular individual |
-| **Description** | El usuario deberá ser capaz de controlar cada articulación del brazo robótico de forma individual. |
-| **Type** | Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
-
+| **Requirement Name** | Individual Joint Control |
+| **Description** | The user shall be able to control each joint of the robotic arm individually. |
+| **Type** | Functional |
+| **Source** | Project Statement |
+| **Rationale** | Individual control of each joint is a fundamental feature for robot operation and debugging. It allows the user to make fine adjustments to the pose, verify the range of motion for each axis, and recover the arm from singular or complex positions. Furthermore, it is an indispensable control method for calibration and maintenance tasks. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Select a specific joint (e.g., Joint 2) in the GUI. <br>2. Use the associated control (e.g., a slider) to command movement in one direction. <br>3. Visually verify in the 3D environment that only the selected joint moves in the expected direction. <br>4. Check that the joint's movement stops when it reaches its defined software limits. <br>5. Repeat steps 1 through 4 for each of the other joints of the robotic arm. <br>6. Confirm that the telemetry displayed in the GUI (REQ-F-004) accurately reflects the current angle of the moved joint. |
+| **Dependencies** | REQ-F-003, REQ-F-004 |
+| **Status** | Proposed |
 ---
 
 #### **Requirement ID: REQ-F-006**
