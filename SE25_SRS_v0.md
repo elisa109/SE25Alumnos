@@ -176,18 +176,18 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requirement ID:REQ-F-004**
+#### **Requirement ID: REQ-F-004**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Visualización de posición en tiempo real |
-| **Description** | La GUI deberá mostrar la posición y orientación en tiempo real del brazo robótico. |
-| **Type** | Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Real-time Pose Display |
+| **Description** | The GUI shall display the real-time position and orientation of the robotic arm. |
+| **Type** | Functional |
+| **Source** | Project Statement |
+| **Rationale** | Displaying real-time telemetry is crucial for providing the operator with immediate feedback on the robot's status. This allows for precise control, facilitates trajectory debugging, and helps in instantly detecting anomalous behaviors, significantly improving the system's safety and operational efficiency. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Launch the simulation and the GUI. <br>2. Move a joint of the robotic arm using the GUI controls. <br>3. Verify that the position and orientation values (Cartesian and angular coordinates) in the GUI update in real-time. <br>4. Check that the displayed values correspond to the robot's actual position in the 3D environment. <br>5. Move the end-effector to a known point and confirm that the GUI accurately reflects those coordinates. <br>6. Ensure the data update rate is smooth and does not exhibit a noticeable lag. |
+| **Dependencies** | REQ-F-003 |
+| **Status** | Proposed |
 
 ---
 
