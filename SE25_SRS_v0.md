@@ -3,20 +3,20 @@
 ## Table of Contents
 1. [Introduction](#1-introduction)  
    1.1 [Purpose](#11-purpose)  
-   1.2 [Scope](#12-scope)
-   1.3 [Glossary](#13-glossary)
+   1.2 [Scope](#12-scope)  
+   1.3 [Glossary](#13-glossary)  
    1.4 [References](#14-references)  
-   1.5 [Overview](#15-overview)  
+   1.5 [Overview](#15-overview)
 
-3. [Overall Description](#2-overall-description)  
+2. [Overall Description](#2-overall-description)  
    2.1 [Product Perspective](#21-product-perspective)  
    2.2 [Product Functions](#22-product-functions)  
    2.3 [User Characteristics](#23-user-characteristics)  
    2.4 [Constraints](#24-constraints)  
 
-4. [System Requirements](#3-system-requirements)  
-   - Functional Requirements (REQ-F-XXX)  
-   - Non-Functional Requirements (REQ-N-XXX)  
+3. [System Requirements](#3-system-requirements)  
+    3.1 [Functional Requirements (REQ-F-XXX)](#31-functional-requirements)  
+    3.2 [Non-Functional Requirements (REQ-N-XXX)](#32-non-functional-requirements)   
 
 5. [Requirements Traceability Matrix (RTM)](#4-requirements-traceability-matrix)  
 
@@ -47,7 +47,7 @@ The primary objectives of the system are:
 - Detect collisions with obstacles and respond with immediate safety measures.  
 - Visualize the robot’s state and motion in real-time through a user-friendly GUI.  
 
-### 1.3 Definitions, Acronyms, Abbreviations
+### 1.3 Glossary
 - **SoI (System of Interest):** The robotic simulation and control software being developed.  
 - **OpsCon (Operational Concept):** A user-oriented description of how the system is expected to operate.  
 - **URDF (Unified Robot Description Format):** A standard XML format used to describe the structure of a robot model.  
@@ -130,12 +130,9 @@ The development and execution of the system are subject to the following constra
 ## 3. System Requirements
 
 ### 3.1 Functional Requirements
-### **Requisitos Funcionales**
-
----
 
 #### **Requirement ID: REQ-F-001**
-| Atributo | Detalles |
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | 3D Simulation Environment |
 | **Description** | The system shall provide a 3D simulation environment for a 6-axis robotic arm. |
@@ -149,8 +146,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-F-002**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-F-002**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | URDF Model Loading |
 | **Description** | The system shall allow a user to load a URDF (Unified Robot Description Format) model of a robotic arm into the simulation.  |
@@ -164,8 +161,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-F-003**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-F-003**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Interfaz Gráfica de Usuario (GUI) |
 | **Description** | The system shall provide a graphical user interface (GUI) for controlling the robotic arm. |
@@ -179,8 +176,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-F-004**
-| Atributo | Detalles |
+#### **Requirement ID:REQ-F-004**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Visualización de posición en tiempo real |
 | **Description** | La GUI deberá mostrar la posición y orientación en tiempo real del brazo robótico. |
@@ -194,8 +191,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-F-005**
-| Atributo | Detalles |
+#### **Requirement ID:REQ-F-005**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Control articular individual |
 | **Description** | El usuario deberá ser capaz de controlar cada articulación del brazo robótico de forma individual. |
@@ -209,8 +206,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-F-006**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-F-006**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Definición y ejecución de secuencias de poses |
 | **Description** | El usuario deberá ser capaz de definir y ejecutar una secuencia de poses objetivo para el efector final del robot. |
@@ -224,8 +221,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-F-007**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-F-007**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Detección de colisiones |
 | **Description** | El sistema deberá ser capaz de detectar colisiones entre el brazo robótico y obstáculos predefinidos en la simulación. |
@@ -239,8 +236,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-F-008**
-| Atributo | Detalles |
+#### **Requirement ID:REQ-F-008**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Parada por colisión |
 | **Description** | Tras la detección de una colisión, el sistema deberá detener inmediatamente el movimiento del robot. |
@@ -253,12 +250,12 @@ The development and execution of the system are subject to the following constra
 | **Status** | Propuesto |
 
 ---
-### **Requisitos No Funcionales**
+### 3.2 Non-Functional Requirements
 
 ---
 
-#### **Requisito ID: REQ-N-001**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-N-001**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Latencia de comunicación |
 | **Description** | La comunicación entre la interfaz de operador y la simulación deberá tener una latencia inferior a 50 milisegundos. |
@@ -272,8 +269,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-N-002**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-N-002**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Tasa de fotogramas (Framerate) |
 | **Description** | El entorno de simulación deberá mantener una tasa de fotogramas de al menos 30 frames por segundo (FPS). |
@@ -287,8 +284,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-N-003**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-N-003**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Plataforma de desarrollo |
 | **Description** | El sistema deberá ser desarrollado usando C/C++ sobre un sistema operativo Linux. |
@@ -302,8 +299,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-N-004**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-N-004**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Framework de comunicación |
 | **Description** | El sistema deberá utilizar ROS 2 para toda la comunicación entre componentes. |
@@ -317,8 +314,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-N-005**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-N-005**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Interfaces para programación concurrente |
 | **Description** | El sistema deberá utilizar interfaces POSIX para tareas de programación concurrente. |
@@ -332,8 +329,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-N-006**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-N-006**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Control de versiones |
 | **Description** | Todo el código fuente deberá ser controlado en versiones utilizando Git. |
@@ -347,8 +344,8 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-#### **Requisito ID: REQ-N-007**
-| Atributo | Detalles |
+#### **Requirement ID: REQ-N-007**
+| Attribute | Details |
 | :--- | :--- |
 | **Requirement Name** | Documentación del sistema |
 | **Description** | El sistema deberá ser documentado de acuerdo con el plan de documentación del proyecto. |
