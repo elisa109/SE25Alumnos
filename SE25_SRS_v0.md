@@ -331,30 +331,30 @@ The development and execution of the system are subject to the following constra
 #### **Requirement ID: REQ-N-006**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Control de versiones |
-| **Description** | Todo el código fuente deberá ser controlado en versiones utilizando Git. |
-| **Type** | No Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Version Control with Git |
+| **Description** | All source code shall be version controlled using Git. |
+| **Type** | Project Statement |
+| **Source** | Instructor (Customer) |
+| **Rationale** | Using Git for version control ensures collaborative, traceable, and reversible development. It allows multiple developers to work on the same project concurrently, supports code reviews through pull requests, and maintains a complete history of all changes. This promotes accountability, reduces integration issues, and provides a foundation for continuous integration and quality assurance processes. |
+| **Priority** | Must have |
+| **Verification Method** | 1. Inspect the GitHub repository to confirm that all source code is tracked under Git. <br>2. Verify that branching and merging strategies follow the project's configuration management plan. <br>3. Check that commits are properly documented with meaningful messages and author information. <br>4. Ensure that pull requests are used for code review before merging to the main branch. <br>5. Confirm that version tags or releases are defined for major milestones. |
+| **Dependencies** | REQ-F-001, REQ-F-002, REQ-F-003, REQ-F-004, REQ-F-005, REQ-F-006, REQ-F-007, REQ-F-008, REQ-N-007 |
+| **Status** | Proposed |
 
 ---
 
 #### **Requirement ID: REQ-N-007**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Documentación del sistema |
-| **Description** | El sistema deberá ser documentado de acuerdo con el plan de documentación del proyecto. |
-| **Type** | No Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Project Documentation Compliance |
+| **Description** | The system shall be documented in accordance with the project’s documentation plan. |
+| **Type** | Non-Functional |
+| **Source** | Project Statement |
+| **Rationale** | Comprehensive documentation ensures consistency, maintainability, and traceability across the project lifecycle. It provides a clear reference for future development, testing, and validation activities, while supporting quality assurance and compliance with ISO/IEC/IEEE 12207 and 29148 standards. Proper documentation also facilitates collaboration among team members and transparency in project deliverables. |
+| **Priority** | Must have |
+| **Verification Method** | 1. Review all project documents (SRS, ADD, SDD, QAP, SCMP, etc.). <br>2. Confirm that each document follows the format, structure, and content defined in the documentation plan. <br>3. Verify that version control and authorship are maintained through Git. <br>4. Ensure that documentation updates are synchronized with system changes and reviewed by the QA lead. <br>5. Check that all mandatory deliverables are submitted and accessible via the GitHub repository. |
+| **Dependencies** | REQ-N-006, REQ-N-003, REQ-N-004, REQ-N-005, REQ-F-001, REQ-F-002, REQ-F-003, REQ-F-004, REQ-F-005, REQ-F-006, REQ-F-007, REQ-F-008 |
+| **Status** | Proposed |
 
 
 ---
