@@ -215,7 +215,7 @@ The development and execution of the system are subject to the following constra
 | **Rationale** | This functionality is essential for automating tasks and transitioning from manual control to programming complex operations. Allowing the definition and execution of sequences enables the robot to perform useful and repetitive tasks (such as pick-and-place or path following) consistently, laying the groundwork for saving and validating complete robot programs. |
 | **Priority** | Must have |
 | **Verification Method**| 1. Use the GUI to define a sequence of at least three distinct target poses (position and orientation) for the end-effector. <br>2. Save the created pose sequence. <br>3. Press the 'Execute Sequence' control in the GUI. <br>4. Observe in the 3D environment and verify that the robot's end-effector reaches each of the defined poses in the correct order. <br>5. Check that the trajectory between poses is smooth and controlled. <br>6. Verify that the GUI displays feedback on the execution status (e.g., 'Sequence in progress,' 'Sequence completed'). |
-| **Dependencies** | REQ-F-003, REQ-F-005 |
+| **Dependencies** | REQ-F-003, REQ-F-005|
 | **Status** | Proposed |
 
 ---
@@ -223,30 +223,30 @@ The development and execution of the system are subject to the following constra
 #### **Requirement ID: REQ-F-007**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Detección de colisiones |
-| **Description** | El sistema deberá ser capaz de detectar colisiones entre el brazo robótico y obstáculos predefinidos en la simulación. |
+| **Requirement Name** | Collision Detection |
+| **Description** | The system shall be capable of detecting collisions between the robotic arm and predefined obstacles within the simulation environment. |
 | **Type** | Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Source** | Project Statement |
+| **Rationale** | Collision detection ensures safe and reliable operation of the robotic arm during simulation by preventing physical interference between components or obstacles. This contributes to reducing risks, costs, and debugging time during development.|
+| **Priority** | Must have |
+| **Verification Method**| 1. Launch the simulation application. <br>2. Initialize the robotic arm and load predefined obstacles. <br>3. Move the arm to positions that intersect with obstacles. <br>4. Verify that collision detection is triggered accurately and visual feedback is displayed. |
+| **Dependencies** |REQ-F-001, REQ-F-004, REQ-F-006 |
+| **Status** | Proposed |
 
 ---
 
 #### **Requirement ID:REQ-F-008**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Parada por colisión |
-| **Description** | Tras la detección de una colisión, el sistema deberá detener inmediatamente el movimiento del robot. |
+| **Requirement Name** | Collision Stop |
+| **Description** | After a collision is detected, the system shall immediately stop the movement of the robotic arm. |
 | **Type** | Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Source** | Project Statement |
+| **Rationale** | Implementing an automatic stop after collision detection ensures the safety of the robotic arm and surrounding environment. It prevents hardware damage, protects users, and maintains system integrity. This functionality is essential for testing safety protocols and validating the system’s response to unexpected contact events. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Launch the simulation environment. <br>2. Initiate robotic arm movement toward a predefined obstacle. <br>3. Trigger a collision event and verify that all arm movements stop immediately. <br>4. Confirm that no further motion commands are executed after the stop signal. <br>5. Observe the system’s feedback to ensure correct detection and response.|
+| **Dependencies** | REQ-F-007 |
+| **Status** | Proposed |
 
 ---
 ### 3.2 Non-Functional Requirements
