@@ -143,14 +143,9 @@ The development and execution of the system are subject to the following constra
 | **Source** | Instructor (Customer) |
 | **Rationale** |A 3D simulation environment allows users to visualize and test robotic arm operations without the risk of damaging physical hardware. It provides a safe and cost-effective platform for prototyping, debugging motion algorithms, and training personnel. Additionally, it ensures that system behaviors can be evaluated under controlled scenarios, improving design reliability and reducing development time |
 | **Priority** |Must have |
-| **Verification Method**|1. Launch the simulation application.
-2. Verify that a 3D environment is displayed correctly.
-3. Confirm that the 6-axis robotic arm is fully rendered.
-4. Operate each joint and validate correct kinematic behavior.
-5. Test collision detection and ensure visual feedback responds accurately.
-6. Confirm simulation performance is smooth under typical scenarios |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Verification Method**|1. Launch the simulation application. <br>2. Verify that a 3D environment is displayed correctly. <br>3. Confirm that the 6-axis robotic arm is fully rendered. <br>4. Operate each joint and validate correct kinematic behavior. <br>5. Test collision detection and ensure visual feedback responds accurately. <br>6. Confirm simulation performance is smooth under typical scenarios.|
+| **Dependencies**|None|
+| **Status** | Proposed |
 
 ---
 
