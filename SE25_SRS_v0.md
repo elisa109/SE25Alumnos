@@ -208,15 +208,15 @@ The development and execution of the system are subject to the following constra
 #### **Requirement ID: REQ-F-006**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Definición y ejecución de secuencias de poses |
-| **Description** | El usuario deberá ser capaz de definir y ejecutar una secuencia de poses objetivo para el efector final del robot. |
-| **Type** | Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Pose Sequence Definition and Execution |
+| **Description** | The user shall be able to define and execute a sequence of target poses for the robot's end-effector. |
+| **Type** | Functional |
+| **Source** | Project Statement |
+| **Rationale** | This functionality is essential for automating tasks and transitioning from manual control to programming complex operations. Allowing the definition and execution of sequences enables the robot to perform useful and repetitive tasks (such as pick-and-place or path following) consistently, laying the groundwork for saving and validating complete robot programs. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Use the GUI to define a sequence of at least three distinct target poses (position and orientation) for the end-effector. <br>2. Save the created pose sequence. <br>3. Press the 'Execute Sequence' control in the GUI. <br>4. Observe in the 3D environment and verify that the robot's end-effector reaches each of the defined poses in the correct order. <br>5. Check that the trajectory between poses is smooth and controlled. <br>6. Verify that the GUI displays feedback on the execution status (e.g., 'Sequence in progress,' 'Sequence completed'). |
+| **Dependencies** | REQ-F-003, REQ-F-005 |
+| **Status** | Proposed |
 
 ---
 
