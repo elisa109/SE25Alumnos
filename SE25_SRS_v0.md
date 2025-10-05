@@ -235,6 +235,22 @@ The development and execution of the system are subject to the following constra
 
 ---
 
+#### **Requirement ID: REQ-F-009**
+| Attribute | Details |
+| :--- | :--- |
+| **Requirement Name** | Teach-In Programming |
+| **Description** | The system shall allow the user to manually move the robot to a desired pose and then record the current position and orientation of the end-effector to add it as a waypoint to a trajectory sequence. |
+| **Type** | Functional |
+| **Source** | End-User (Hypothetical) |
+| **Rationale** | This programming method is highly intuitive and reduces the complexity of sequence creation, as it eliminates the need to manually enter numerical coordinates. It allows the user to visually "teach" the robot a trajectory, which speeds up task development and minimizes input errors. |
+| **Priority** | Should have |
+| **Verification Method**| 1. Use the manual controls to move the end-effector to a Pose A. <br>2. Activate a "Record Pose" control in the GUI. <br>3. Verify that Pose A has been added to the current sequence list. <br>4. Move the robot to a Pose B and record the pose again. <br>5. Verify that Pose B has been added to the list after Pose A. <br>6. Execute the sequence and confirm that the robot moves first to Pose A and then to Pose B. |
+| **Dependencies** | REQ-F-005, REQ-F-006 |
+| **Status** | Proposed |
+
+---
+
+
 #### **Requirement ID:REQ-F-008**
 | Attribute | Details |
 | :--- | :--- |
