@@ -317,75 +317,75 @@ The development and execution of the system are subject to the following constra
 #### **Requirement ID: REQ-N-001**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Latencia de comunicación |
-| **Description** | La comunicación entre la interfaz de operador y la simulación deberá tener una latencia inferior a 50 milisegundos. |
-| **Type** | No Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Communication Latency |
+| **Description** | The communication between the operator interface and the simulation shall have a latency of less than 50 milliseconds. |
+| **Type** | Non-Functional (Performance) |
+| **Source** | Project Statement |
+| **Rationale** | Maintaining low-latency communication between the GUI and the simulation backend is critical for real-time control and feedback. Latencies above 50 ms can cause noticeable delays, reducing the precision of manual operations and potentially affecting user confidence and control responsiveness. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Establish a test setup with both GUI and simulation components running. <br> 2. Use a network analyzer or system log timestamps to measure round-trip message delay. <br> 3. Perform 50 random interaction samples (e.g., joint movement commands) and record latency values. <br> 4. Calculate the average latency and confirm it remains below 50 ms.|
+| **Dependencies** | REQ-F-003, REQ-F-004 |
+| **Status** | Proposed |
 
 ---
 
 #### **Requirement ID: REQ-N-002**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Tasa de fotogramas (Framerate) |
-| **Description** | El entorno de simulación deberá mantener una tasa de fotogramas de al menos 30 frames por segundo (FPS). |
-| **Type** | No Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Framerate |
+| **Description** | The simulation environment shall maintain a frame rate of at least 30 frames per second. |
+| **Type** | Non-Functional (Performance, Usability) |
+| **Source** | Project Statement |
+| **Rationale** | A minimum framerate of 30 FPS ensures smooth visual feedback and accurate representation of motion dynamics, which is essential for realistic simulation, intuitive user experience, and precise monitoring of robotic operations. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Launch the simulation on the reference machine. <br> 2. Run a standard 3D scene with a moving robotic arm. <br> 3. Measure the framerate using the built-in performance monitor or an external profiler. <br> 4. Verify that the average framerate remains above 30 FPS during a one-minute test session. |
+| **Dependencies** | REQ-F-001 |
+| **Status** | Proposed |
 
 ---
 
 #### **Requirement ID: REQ-N-003**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Plataforma de desarrollo |
-| **Description** | El sistema deberá ser desarrollado usando C/C++ sobre un sistema operativo Linux. |
-| **Type** | No Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Development Platform and Programming Language |
+| **Description** | The system shall be developed using C/C++ on a Linux operating system. |
+| **Type** | Non-Functional (Technical Constraint) |
+| **Source** | Project Statement |
+| **Rationale** | Using C/C++ on Linux ensures compatibility with ROS 2, provides real-time performance, and aligns with the target deployment and testing environment. It also enables integration with existing robotics frameworks and tools commonly used in academic and industrial applications. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Review build configuration files (CMakeLists, package.xml). <br> 2. Confirm compilation using GCC or Clang on a Linux system. <br> 3. Execute binaries and verify runtime environment variables. |
+| **Dependencies** | None |
+| **Status** | Proposed |
 
 ---
 
 #### **Requirement ID: REQ-N-004**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Framework de comunicación |
-| **Description** | El sistema deberá utilizar ROS 2 para toda la comunicación entre componentes. |
-| **Type** | No Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Communication Framework |
+| **Description** | The system shall use ROS 2 for all inter-component communication. |
+| **Type** | Non-Functional (Technical Constraint, Integration) |
+| **Source** | Project Statement |
+| **Rationale** | ROS 2 provides a robust and scalable publish-subscribe communication model that supports distributed systems and real-time data exchange. Adopting ROS 2 ensures interoperability with other robotic modules, simplifies testing, and enables future system extensibility. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Inspect project dependencies to confirm ROS 2 packages are included. <br> 2. Launch ROS 2 nodes and verify successful topic and service registration. <br> 3. Use ros2 topic list and ros2 node info to confirm data exchange among components. |
+| **Dependencies** | REQ-N-003 |
+| **Status** | Proposed |
 
 ---
 
 #### **Requirement ID: REQ-N-005**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Interfaces para programación concurrente |
-| **Description** | El sistema deberá utilizar interfaces POSIX para tareas de programación concurrente. |
-| **Type** | No Funcional |
-| **Source** | Enunciado del Proyecto |
-| **Rationale** | |
-| **Priority** | |
-| **Verification Method**| |
-| **Dependencies** | |
-| **Status** | Propuesto |
+| **Requirement Name** | Concurring Programming Interfaces |
+| **Description** | The system shall utilize POSIX interfaces for concurrent programming tasks. |
+| **Type** | Non-Functional (Technical Constraint, Performance) |
+| **Source** | Project Statement |
+| **Rationale** | Implementing concurrency using POSIX threads guarantees portability, efficiency, and deterministic task scheduling within Linux environments. It supports real-time data handling, allowing multiple processes (such as GUI updates, kinematic computation, and sensor simulation) to execute simultaneously without interference. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Inspect the source code for the inclusion of <pthread.h> or equivalent POSIX threading APIs. <br> 2. Run a concurrency stress test to verify correct parallel execution and synchronization.<br> 3. Confirm the absence of deadlocks or race conditions using static analysis tools.|
+| **Dependencies** | REQ-N-003, REQ-N-004 |
+| **Status** | Proposed |
 
 ---
 
@@ -436,6 +436,8 @@ The development and execution of the system are subject to the following constra
 
 ## 4. Requirements Traceability Matrix (RTM)
 
+The Requirements Traceability Matrix (RTM) provides a clear correspondence between each system requirement and the operational scenarios in which it is applied. This ensures full coverage, consistency, and validation of system functionality from a user and stakeholder perspective. Each requirement is mapped to one or more operational scenarios that describe the context of its use, as well as to the stakeholder(s) responsible for or affected by its implementation.
+
 | Requirement ID | Operational Scenario(s) | Stakeholder(s) |
 | :--- | :--- | :--- |
 | **REQ-F-001** | Scenario 1: System Initialization and Robot/Environment Loading | End-User (Hypothetical) |
@@ -450,11 +452,27 @@ The development and execution of the system are subject to the following constra
 | **REQ-F-010** | Scenario 4: Fault Detection and Response | Instructor (Customer) |
 | **REQ-F-011** | Scenario 3: Automated Path Execution | End-User (Hypothetical) |
 | **REQ-F-012** | Scenario 1, 2, 3, 4 | End-User (Hypothetical) |
-| **REQ-N-001** | Scenario 2, Scenario 3 | End-User (Hypothetical) |
-| **REQ-N-002** | Scenario 1, 2, 3, 4 | End-User (Hypothetical) |
-| **REQ-N-003** | N/A (Course Constraint) | Instructor (Customer) |
-| **REQ-N-004** | N/A (Course Constraint) | Instructor (Customer) |
-| **REQ-N-005** | N/A (Course Constraint) | Instructor (Customer) |
-| **REQ-N-006** | N/A (Development Process) | Students (Developers) |
-| **REQ-N-007** | N/A (Course Deliverable) | Instructor (Customer) |
+| **REQ-N-001** | Scenario 2: Manual Control of the Robotic Arm <br> Scenario 3: Automated Path Execution | End-User (Hypothetical) |
+| **REQ-N-002** | Scenario 1: System Initialization <br> Scenario 2: Manual Control of the Robotic Arm <br> Scenario 3: Automated Path Execution <br> Scenario 4: Fault Detection and Response | End-User (Hypothetical) |
+| **REQ-N-003** | Scenario 0: Development and Integration Setup | Instructor (Customer) |
+| **REQ-N-004** | Scenario 0: Development and Integration Setup | Instructor (Customer) |
+| **REQ-N-005** | Scenario 0: Development and Integration Setup | Instructor (Customer) |
+| **REQ-N-006** | Scenario 5: Development and Configuration Management | Students (Developers) |
+| **REQ-N-007** | Scenario 6: Documentation and Quality Assurance | Instructor (Customer) |
 | **REQ-N-008** | Scenario 1: System Initialization and Robot/Environment Loading | End-User (Hypothetical) |
+
+---
+
+### Operational Scenarios
+
+The following operational scenarios describe typical interactions between the user and the robotic arm simulation system. Each scenario represents a specific operational context that groups a set of related functional and non-functional requirements. These scenarios serve as the foundation for requirement validation, system behavior analysis, and traceability within the Requirements Traceability Matrix (RTM).
+
+| Scenario ID | Scenario Name | Description |
+| :--- | :--- | :--- |
+| **Scenario 0** | Development and Integration Setup | Covers configuration of the development environment, ROS 2 communication setup, and concurrent process configuration. |
+| **Scenario 1** | System Initialization and Robot/Environment Loading | The user launches the system, loads the 3D simulation, and imports the URDF robot model. |
+| **Scenario 2** | Manual Control of the Robotic Arm | The user manipulates individual joints and observes real-time pose updates through the GUI. |
+| **Scenario 3** | Automated Path Execution | The user defines a pose sequence and executes it automatically within the simulation. |
+| **Scenario 4** | Fault Detection and Response | The system detects collisions or anomalies and triggers automatic or manual emergency stop procedures. |
+| **Scenario 5** | Development and Configuration Management | Includes activities related to version control, branching, and collaborative development under Git. |
+| **Scenario 6** | Documentation and Quality Assurance | Ensures all project deliverables, SRS compliance, and documentation follow the established format and are under version control. |
