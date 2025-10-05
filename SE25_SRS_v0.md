@@ -164,7 +164,7 @@ The development and execution of the system are subject to the following constra
 #### **Requirement ID: REQ-F-003**
 | Attribute | Details |
 | :--- | :--- |
-| **Requirement Name** | Interfaz Gráfica de Usuario (GUI) |
+| **Requirement Name** | Graphical User Interface (GUI) |
 | **Description** | The system shall provide a graphical user interface (GUI) for controlling the robotic arm. |
 | **Type** | Functional |
 | **Source** | Instructor (Customer) |
@@ -225,7 +225,7 @@ The development and execution of the system are subject to the following constra
 | :--- | :--- |
 | **Requirement Name** | Collision Detection |
 | **Description** | The system shall be capable of detecting collisions between the robotic arm and predefined obstacles within the simulation environment. |
-| **Type** | Funcional |
+| **Type** | Functional |
 | **Source** | Project Statement |
 | **Rationale** | Collision detection ensures safe and reliable operation of the robotic arm during simulation by preventing physical interference between components or obstacles. This contributes to reducing risks, costs, and debugging time during development.|
 | **Priority** | Must have |
@@ -240,7 +240,7 @@ The development and execution of the system are subject to the following constra
 | :--- | :--- |
 | **Requirement Name** | Collision Stop |
 | **Description** | After a collision is detected, the system shall immediately stop the movement of the robotic arm. |
-| **Type** | Funcional |
+| **Type** | Functional |
 | **Source** | Project Statement |
 | **Rationale** | Implementing an automatic stop after collision detection ensures the safety of the robotic arm and surrounding environment. It prevents hardware damage, protects users, and maintains system integrity. This functionality is essential for testing safety protocols and validating the system’s response to unexpected contact events. |
 | **Priority** | Must have |
@@ -323,7 +323,7 @@ The development and execution of the system are subject to the following constra
 | **Source** | Project Statement |
 | **Rationale** | Maintaining low-latency communication between the GUI and the simulation backend is critical for real-time control and feedback. Latencies above 50 ms can cause noticeable delays, reducing the precision of manual operations and potentially affecting user confidence and control responsiveness. |
 | **Priority** | Must have |
-| **Verification Method**| 1. Establish a test setup with both GUI and simulation components running. <br> 2. Use a network analyzer or system log timestamps to measure round-trip message delay. <br> 3. Perform 50 random interaction samples (e.g., joint movement commands) and record latency values. <br> 4. Calculate the average latency and confirm it remains below 50 ms.|
+| **Verification Method**| 1. Establish a test setup with both GUI and simulation components running. <br> 2. Use a network analyzer or system log timestamps to measure round-trip message delay. <br> 3. Perform 20 random interaction samples (e.g., joint movement commands) and record latency values. <br> 4. Calculate the average latency and confirm it remains below 50 ms.|
 | **Dependencies** | REQ-F-003, REQ-F-004 |
 | **Status** | Proposed |
 
@@ -383,7 +383,7 @@ The development and execution of the system are subject to the following constra
 | **Source** | Project Statement |
 | **Rationale** | Implementing concurrency using POSIX threads guarantees portability, efficiency, and deterministic task scheduling within Linux environments. It supports real-time data handling, allowing multiple processes (such as GUI updates, kinematic computation, and sensor simulation) to execute simultaneously without interference. |
 | **Priority** | Must have |
-| **Verification Method**| 1. Inspect the source code for the inclusion of <pthread.h> or equivalent POSIX threading APIs. <br> 2. Run a concurrency stress test to verify correct parallel execution and synchronization.<br> 3. Confirm the absence of deadlocks or race conditions using static analysis tools.|
+| **Verification Method**| 1. Inspect the source code for the inclusion of <pthread.h> or equivalent POSIX threading APIs. <br> 2. Run a concurrency stress test to verify correct parallel execution and synchronization.<br> 3. Confirm the absence of deadlocks or race conditions.|
 | **Dependencies** | REQ-N-003, REQ-N-004 |
 | **Status** | Proposed |
 
@@ -394,7 +394,7 @@ The development and execution of the system are subject to the following constra
 | :--- | :--- |
 | **Requirement Name** | Version Control with Git |
 | **Description** | All source code shall be version controlled using Git. |
-| **Type** | Project Statement |
+| **Type** | Non-Functional (Project Constraint) |
 | **Source** | Instructor (Customer) |
 | **Rationale** | Using Git for version control ensures collaborative, traceable, and reversible development. It allows multiple developers to work on the same project concurrently, supports code reviews through pull requests, and maintains a complete history of all changes. This promotes accountability, reduces integration issues, and provides a foundation for continuous integration and quality assurance processes. |
 | **Priority** | Must have |
@@ -472,7 +472,7 @@ The following operational scenarios describe typical interactions between the us
 | **Scenario 0** | Development and Integration Setup | Covers configuration of the development environment, ROS 2 communication setup, and concurrent process configuration. |
 | **Scenario 1** | System Initialization and Robot/Environment Loading | The user launches the system, loads the 3D simulation, and imports the URDF robot model. |
 | **Scenario 2** | Manual Control of the Robotic Arm | The user manipulates individual joints and observes real-time pose updates through the GUI. |
-| **Scenario 3** | Automated Path Execution | The user defines a pose sequence and executes it automatically within the simulation. |
+| **Scenario 3** | Automated Path Execution | Scenario 3: The user defines and executes a sequence of poses via the GUI. |
 | **Scenario 4** | Fault Detection and Response | The system detects collisions or anomalies and triggers automatic or manual emergency stop procedures. |
 | **Scenario 5** | Development and Configuration Management | Includes activities related to version control, branching, and collaborative development under Git. |
 | **Scenario 6** | Documentation and Quality Assurance | Ensures all project deliverables, SRS compliance, and documentation follow the established format and are under version control. |
