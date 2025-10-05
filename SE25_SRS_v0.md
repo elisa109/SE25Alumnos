@@ -265,6 +265,21 @@ The development and execution of the system are subject to the following constra
 
 ---
 
+#### **Requirement ID: REQ-F-010**
+| Attribute | Details |
+| :--- | :--- |
+| **Requirement Name** | Manual Emergency Stop and Recovery |
+| **Description** | The system shall provide an emergency stop (E-Stop) control in the GUI. When activated, it shall immediately halt all robot motion and cancel any executing sequence. After the stop, the system shall enter a recovery mode that allows the user to manually move the robot to a safe position. |
+| **Type** | Functional |
+| **Source** | Instructor (Customer) |
+| **Rationale** | A manual emergency stop is a critical safety mechanism that provides the operator with a total override control. It allows for the instantaneous halting of the system to prevent damage or unintended behaviors that may not be detected automatically. The subsequent recovery mode is essential for safely repositioning the robot without needing to restart the entire simulation. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Start the execution of an automated motion sequence. <br>2. During the movement, activate the "Emergency Stop" button in the GUI. <br>3. Verify that all robot motion halts immediately. <br>4. Confirm that the status of the executing sequence is displayed as "Cancelled" or "Aborted". <br>5. Check that controls for initiating automated sequences are disabled. <br>6. Verify that manual motion controls (REQ-F-005) are enabled and allow the robot to be moved. |
+| **Dependencies** | REQ-F-003, REQ-F-005, REQ-F-006 |
+| **Status** | Proposed |
+
+---
+
 ### 3.2 Non-Functional Requirements
 
 ---
