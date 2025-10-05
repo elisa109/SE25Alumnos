@@ -280,6 +280,36 @@ The development and execution of the system are subject to the following constra
 
 ---
 
+#### **Requirement ID: REQ-F-011**
+| Attribute | Details |
+| :--- | :--- |
+| **Requirement Name** | Sequence Pause and Resume |
+| **Description** | The system shall allow the user to pause the execution of an ongoing motion sequence. Once paused, the user shall be able to resume the sequence from the exact point where it was stopped. |
+| **Type** | Functional |
+| **Source** | End-User (Hypothetical) |
+| **Rationale** | This functionality provides non-destructive flow control over automated tasks. It allows the operator to temporarily halt the robot for inspection or to analyze the system's state, and then continue the task without losing progress, improving efficiency and operational flexibility. |
+| **Priority** | Should have |
+| **Verification Method**| 1. Start the execution of a multi-point sequence. <br>2. In the middle of a movement between two points, activate the "Pause" button. <br>3. Verify that the robot stops in a controlled manner. <br>4. Activate the "Resume" button. <br>5. Confirm that the robot continues its movement to the original target point and correctly completes the rest of the sequence. |
+| **Dependencies** | REQ-F-006 |
+| **Status** | Proposed |
+
+---
+
+#### **Requirement ID: REQ-F-012**
+| Attribute | Details |
+| :--- | :--- |
+| **Requirement Name** | User Status and Notification Panel |
+| **Description** | The GUI shall include a text panel (log or status bar) to display informational messages to the user. These messages shall include the current system status (e.g., "Ready", "Executing sequence..."), action confirmations (e.g., "Pose saved"), warnings, and errors (e.g., "Inverse kinematics solution not found"). |
+| **Type** | Functional |
+| **Source** | End-User (Hypothetical), Students (Developers) |
+| **Rationale** | A centralized notification system is vital for usability and debugging. It keeps the user informed about the system's state, confirms that their actions have taken effect, and provides clear diagnostics when errors occur, reducing confusion and improving the overall interaction. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Start the system and verify that the panel displays the "Ready" status. <br>2. Record a new pose and confirm that a message like "Pose X saved" appears. <br>3. Execute a sequence and verify that the status changes to "Executing sequence...". <br>4. Command an impossible action (e.g., moving to an unreachable point) and verify that a clear error message is displayed in the panel. |
+| **Dependencies** | REQ-F-003 |
+| **Status** | Proposed |
+
+---
+
 ### 3.2 Non-Functional Requirements
 
 ---
