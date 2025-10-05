@@ -235,6 +235,21 @@ The development and execution of the system are subject to the following constra
 
 ---
 
+#### **Requirement ID:REQ-F-008**
+| Attribute | Details |
+| :--- | :--- |
+| **Requirement Name** | Collision Stop |
+| **Description** | After a collision is detected, the system shall immediately stop the movement of the robotic arm. |
+| **Type** | Funcional |
+| **Source** | Project Statement |
+| **Rationale** | Implementing an automatic stop after collision detection ensures the safety of the robotic arm and surrounding environment. It prevents hardware damage, protects users, and maintains system integrity. This functionality is essential for testing safety protocols and validating the system’s response to unexpected contact events. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Launch the simulation environment. <br>2. Initiate robotic arm movement toward a predefined obstacle. <br>3. Trigger a collision event and verify that all arm movements stop immediately. <br>4. Confirm that no further motion commands are executed after the stop signal. <br>5. Observe the system’s feedback to ensure correct detection and response.|
+| **Dependencies** | REQ-F-007 |
+| **Status** | Proposed |
+
+---
+
 #### **Requirement ID: REQ-F-009**
 | Attribute | Details |
 | :--- | :--- |
@@ -250,21 +265,6 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-
-#### **Requirement ID:REQ-F-008**
-| Attribute | Details |
-| :--- | :--- |
-| **Requirement Name** | Collision Stop |
-| **Description** | After a collision is detected, the system shall immediately stop the movement of the robotic arm. |
-| **Type** | Funcional |
-| **Source** | Project Statement |
-| **Rationale** | Implementing an automatic stop after collision detection ensures the safety of the robotic arm and surrounding environment. It prevents hardware damage, protects users, and maintains system integrity. This functionality is essential for testing safety protocols and validating the system’s response to unexpected contact events. |
-| **Priority** | Must have |
-| **Verification Method**| 1. Launch the simulation environment. <br>2. Initiate robotic arm movement toward a predefined obstacle. <br>3. Trigger a collision event and verify that all arm movements stop immediately. <br>4. Confirm that no further motion commands are executed after the stop signal. <br>5. Observe the system’s feedback to ensure correct detection and response.|
-| **Dependencies** | REQ-F-007 |
-| **Status** | Proposed |
-
----
 ### 3.2 Non-Functional Requirements
 
 ---
