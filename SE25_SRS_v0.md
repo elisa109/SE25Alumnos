@@ -438,18 +438,23 @@ The development and execution of the system are subject to the following constra
 
 | Requirement ID | Operational Scenario(s) | Stakeholder(s) |
 | :--- | :--- | :--- |
-| **REQ-F-001** | Scenario 1: System Initialization and Robot/Environment Loading | End-User (Hypothetical) |
-| **REQ-F-002** | Scenario 1: System Initialization and Robot/Environment Loading | End-User (Hypothetical) |
-| **REQ-F-003** | Scenario 2: Manual Control of the Robotic Arm | End-User (Hypothetical) |
-| **REQ-F-004** | Scenario 2: Manual Control of the Robotic Arm | End-User (Hypothetical) |
-| **REQ-F-005** | Scenario 2: Manual Control of the Robotic Arm | End-User (Hypothetical) |
-| **REQ-F-006** | Scenario 3: Automated Path Execution | End-User (Hypothetical) |
-| **REQ-F-007** | Scenario 4: Fault Detection and Response | Instructor (Customer) |
-| **REQ-F-008** | Scenario 4: Fault Detection and Response | Instructor (Customer) |
-| **REQ-N-001** | Scenario 2, Scenario 3 | End-User (Hypothetical) |
-| **REQ-N-002** | Scenario 1, 2, 3, 4 | End-User (Hypothetical) |
-| **REQ-N-003** | N/A (Course Constraint) | Instructor (Customer) |
-| **REQ-N-004** | N/A (Course Constraint) | Instructor (Customer) |
-| **REQ-N-005** | N/A (Course Constraint) | Instructor (Customer) |
-| **REQ-N-006** | N/A (Development Process) | Students (Developers) |
-| **REQ-N-007** | N/A (Course Deliverable) | Instructor (Customer) |
+| **REQ-F-001** | [cite_start]Scenario 1: System Initialization and Robot/Environment Loading  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-002** | [cite_start]Scenario 1: System Initialization and Robot/Environment Loading  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-003** | [cite_start]Scenario 2: Manual Control of the Robotic Arm  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-004** | [cite_start]Scenario 2: Manual Control of the Robotic Arm  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-005** | [cite_start]Scenario 2: Manual Control of the Robotic Arm  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-006** | [cite_start]Scenario 3: Automated Path Execution  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-007** | [cite_start]Scenario 4: Fault Detection and Response  | [cite_start]Instructor (Customer)  |
+| **REQ-F-008** | [cite_start]Scenario 4: Fault Detection and Response  | [cite_start]Instructor (Customer)  |
+| **REQ-N-001** | [cite_start]Scenario 2, Scenario 3  | [cite_start]End-User (Hypothetical)  |
+| **REQ-N-002** | Scenario 1, 2, 3, 4 | [cite_start]End-User (Hypothetical)  |
+| **REQ-N-003** | N/A (Course Constraint) | [cite_start]Instructor (Customer)  |
+| **REQ-N-004** | N/A (Course Constraint) | [cite_start]Instructor (Customer)  |
+| **REQ-N-005** | N/A (Course Constraint) | [cite_start]Instructor (Customer)  |
+| **REQ-N-006** | N/A (Development Process) | [cite_start]Students (Developers)  |
+| **REQ-N-007** | N/A (Course Deliverable) | [cite_start]Instructor (Customer)  |
+| **REQ-F-009** | [cite_start]Scenario 3: Automated Path Execution  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-010** | [cite_start]Scenario 4: Fault Detection and Response  | [cite_start]Instructor (Customer)  |
+| **REQ-F-011** | [cite_start]Scenario 3: Automated Path Execution  | [cite_start]End-User (Hypothetical)  |
+| **REQ-F-012** | Scenario 1, 2, 3, 4 | [cite_start]End-User (Hypothetical)  |
+| **REQ-N-008** | [cite_start]Scenario 1: System Initialization and Robot/Environment Loading  | [cite_start]End-User (Hypothetical)  |
