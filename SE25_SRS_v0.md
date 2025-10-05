@@ -417,6 +417,20 @@ The development and execution of the system are subject to the following constra
 | **Dependencies** | REQ-N-006, REQ-N-003, REQ-N-004, REQ-N-005, REQ-F-001, REQ-F-002, REQ-F-003, REQ-F-004, REQ-F-005, REQ-F-006, REQ-F-007, REQ-F-008 |
 | **Status** | Proposed |
 
+---
+
+#### **Requirement ID: REQ-N-008**
+| Attribute | Details |
+| :--- | :--- |
+| **Requirement Name** | System Startup Time |
+| **Description** | The system shall be fully initialized and ready to receive user commands in less than 10 seconds from its execution on the reference machine. |
+| **Type** | Non-Functional (Usability, Performance) |
+| **Source** | End-User (Hypothetical) |
+| **Rationale** | A fast startup time is a key factor in an application's usability. Limiting this time to under 10 seconds ensures that the user can begin working efficiently without frustration from prolonged waits, improving the overall user experience. |
+| **Priority** | Should have |
+| **Verification Method**| 1. From a terminal, execute the command to launch the application, recording the start time. <br>2. Record the time at which the GUI becomes interactive and the connection to the simulation is established. <br>3. Repeat the test 5 times. <br>4. Calculate the average startup time and verify that it is less than 10 seconds. |
+| **Dependencies** | REQ-F-001, REQ-F-003 |
+| **Status** | Proposed |
 
 ---
 
