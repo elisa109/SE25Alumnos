@@ -124,8 +124,6 @@ The system is intended for three primary categories of stakeholders:
   - Need: A reliable, flexible, and user-friendly tool for testing control algorithms without requiring physical robots.  
 
 ### 2.4 Operational Scenarios
-![A SysML v2 model of the SoI for the project.](Operational_Scenarios.png)</center>
-
 The scenarios to take into consideration are the following:
 - **Scenario 1: System Initialization and Robot/Environment Loading**. The user starts the control interface and the simulation environment. The simulation loads a 3D model of a robotic arm into a virtual world. The control interface establishes a connection with the simulation and displays the initial state of the robot.
 - **Scenario 2: Manual Control of the Robotic Arm**. The user utilizes the control interface to manually jog the joints of the robotic arm. The control commands are sent to the simulation in real-time, and the user observes the updated robot pose in the simulation.
