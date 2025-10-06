@@ -432,6 +432,20 @@ The development and execution of the system are subject to the following constra
 | **Dependencies** | REQ-F-001, REQ-F-003 |
 | **Status** | Proposed |
 
+#### **Requirement ID: REQ-N-009**
+| Attribute | Details |
+| :--- | :--- |
+| **Requirement Name** | Responsive system |
+| **Description** | The GUI shall remain responsive during robot execution and simulation updates. |
+| **Type** | Non-Functional (Usability, Performance) |
+| **Source** | End-User (Hypothetical) |
+| **Rationale** | A responsive interface is essential for usability and safety. It ensures that users can interact with the system in real time, even during intensive simulation or control operations. |
+| **Priority** | Must have |
+| **Verification Method**| 1. Launch the system and begin a trajectory execution. 2. Attempt GUI interactions (e.g., move sliders, click buttons) during execution. 3. Confirm that inputs are registered without delay and GUI updates occur every 100 ms |
+| **Dependencies** | REQ-F-003, REQ-F-004, REQ-F-006 |
+| **Status** | Proposed |
+
+
 ---
 
 ## 4. Requirements Traceability Matrix (RTM)
