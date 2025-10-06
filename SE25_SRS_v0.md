@@ -467,6 +467,8 @@ All communication is local and handled via ROS 2. No external network protocols 
 | **Dependencies** | REQ-F-001, REQ-F-003 |
 | **Status** | Proposed |
 
+---
+
 #### **Requirement ID: REQ-N-009**
 | Attribute | Details |
 | :--- | :--- |
