@@ -7,18 +7,21 @@
    1.3 [Glossary](#13-glossary)  
    1.4 [References](#14-references)  
    1.5 [Overview](#15-overview)
+   1.6 [Definitions, Acronyms, and Abbreviations](#16-definitions-acronyms-and-abbreviations)
 
 2. [Overall Description](#2-overall-description)  
    2.1 [Product Perspective](#21-product-perspective)  
    2.2 [Product Functions](#22-product-functions)  
-   2.3 [User Characteristics](#23-user-characteristics)  
-   2.4 [Constraints](#24-constraints)  
+   2.3 [User Characteristics](#23-user-characteristics)
+   2.4 [Operational Scenarios](#24-operational-scenarios)  
+   2.5 [Constraints](#25-constraints)  
 
 3. [System Requirements](#3-system-requirements)  
-    3.1 [Functional Requirements (REQ-F-XXX)](#31-functional-requirements)  
-    3.2 [Non-Functional Requirements (REQ-N-XXX)](#32-non-functional-requirements)   
+    3.1 [External Interface Requirements](#31-external-interface-requirements)
+    3.2 [Functional Requirements (REQ-F-XXX)](#32-functional-requirements)  
+    3.3 [Non-Functional Requirements (REQ-N-XXX)](#33-non-functional-requirements)   
 
-5. [Requirements Traceability Matrix (RTM)](#4-requirements-traceability-matrix)  
+4. [Requirements Traceability Matrix (RTM)](#4-requirements-traceability-matrix)  
 
 ---
 
@@ -71,6 +74,11 @@ This document is structured as follows:
 - **Section 3 (System Requirements):** Lists and details functional and non-functional requirements with unique IDs and acceptance criteria.  
 - **Section 4 (Traceability Matrix):** Maps requirements to operational scenarios and stakeholders to ensure coverage and alignment.  
 
+### 1.6 Definitions, Acronyms, and Abbreviations
+URDF: Unified Robot Description Format used to describe the robot model.
+ROS 2: Robot Operating System version 2, used for communication between system components.
+GUI: Graphical User Interface for user interaction with the robot.
+SRS: Software Requirements Specification.
 
 ## 2. Overall Description
 
@@ -115,7 +123,16 @@ The system is intended for three primary categories of stakeholders:
   - Background: Robotics researcher.  
   - Need: A reliable, flexible, and user-friendly tool for testing control algorithms without requiring physical robots.  
 
-### 2.4 Constraints
+### 2.4 Operational Scenarios
+![A SysML v2 model of the SoI for the project.](Operational_Scenarios.png)</center>
+
+The scenarios to take into consideration are the following:
+- **Scenario 1: System Initialization and Robot/Environment Loading**. The user starts the control interface and the simulation environment. The simulation loads a 3D model of a robotic arm into a virtual world. The control interface establishes a connection with the simulation and displays the initial state of the robot.
+- **Scenario 2: Manual Control of the Robotic Arm**. The user utilizes the control interface to manually jog the joints of the robotic arm. The control commands are sent to the simulation in real-time, and the user observes the updated robot pose in the simulation.
+- **Scenario 3: Automated Path Execution**. The user defines a sequence of target poses for the robotic arm. The control system calculates a trajectory and sends a stream of commands to the simulation to execute the path. The simulation visualizes the robot moving along the planned trajectory.
+- **Scenario 4: Fault Detection and Response**. The simulation detects a collision between the robotic arm and an obstacle in the environment. It sends a fault signal to the control system, which halts the robot’s motion and alerts the user.
+
+### 2.5 Constraints
 The development and execution of the system are subject to the following constraints:  
 - **Platform Constraint:** The system must run on **Ubuntu 24.04 LTS**.  
 - **Programming Languages:** The implementation shall use **C/C++**.  
@@ -128,8 +145,28 @@ The development and execution of the system are subject to the following constra
 ---
 
 ## 3. System Requirements
+This section defines the functional and non-functional requirements of the SE25 Robot Simulation and Control System.
 
-### 3.1 Functional Requirements
+### 3.1 External Interface Requirements
+#### User Interface
+The GUI shall include:
+- Manual control buttons for each joint.
+- A panel to select and execute predefined trajectories.
+- Real-time feedback display of joint positions and status.
+- A clean layout with labeled controls and tooltips.
+
+#### Hardware Interfaces
+The system simulates a robotic arm and does not interface with physical hardware. However, the architecture allows future integration with real robots via ROS 2.
+
+#### Software Interfaces
+- The system uses ROS 2 topics and services for communication.
+- The robot model is loaded from a URDF file.
+- The GUI interacts with the simulation via ROS 2 nodes.
+
+#### Communication Interfaces
+All communication is local and handled via ROS 2. No external network protocols or internet connectivity are required.
+
+### 3.2 Functional Requirements
 
 #### **Requirement ID: REQ-F-001**
 | Attribute | Details |
@@ -310,7 +347,7 @@ The development and execution of the system are subject to the following constra
 
 ---
 
-### 3.2 Non-Functional Requirements
+### 3.3 Non-Functional Requirements
 
 ---
 
