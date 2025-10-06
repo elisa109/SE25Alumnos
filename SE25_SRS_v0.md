@@ -503,14 +503,15 @@ The Requirements Traceability Matrix (RTM) provides a clear correspondence betwe
 | **REQ-F-010** | Scenario 4: Fault Detection and Response | Instructor (Customer) |
 | **REQ-F-011** | Scenario 3: Automated Path Execution | End-User (Hypothetical) |
 | **REQ-F-012** | Scenario 1, 2, 3, 4 | End-User (Hypothetical) |
-| **REQ-N-001** | Scenario 2: Manual Control of the Robotic Arm <br> Scenario 3: Automated Path Execution | End-User (Hypothetical) |
-| **REQ-N-002** | Scenario 1: System Initialization <br> Scenario 2: Manual Control of the Robotic Arm <br> Scenario 3: Automated Path Execution <br> Scenario 4: Fault Detection and Response | End-User (Hypothetical) |
-| **REQ-N-003** | Scenario 0: Development and Integration Setup | Instructor (Customer) |
-| **REQ-N-004** | Scenario 0: Development and Integration Setup | Instructor (Customer) |
-| **REQ-N-005** | Scenario 0: Development and Integration Setup | Instructor (Customer) |
-| **REQ-N-006** | Scenario 5: Development and Configuration Management | Students (Developers) |
-| **REQ-N-007** | Scenario 6: Documentation and Quality Assurance | Instructor (Customer) |
+| **REQ-N-001** | Scenario 2, Scenario 3 | End-User (Hypothetical) |
+| **REQ-N-002** | Scenario 1, 2, 3, 4 | End-User (Hypothetical) |
+| **REQ-N-003** | N/A (Course Constraint) | Instructor (Customer) |
+| **REQ-N-004** | N/A (Course Constraint) | Instructor (Customer) |
+| **REQ-N-005** | N/A (Course Constraint) | Instructor (Customer) |
+| **REQ-N-006** | N/A (Development Process) | Students (Developers) |
+| **REQ-N-007** | N/A (Course Deliverable) | Instructor (Customer) |
 | **REQ-N-008** | Scenario 1: System Initialization and Robot/Environment Loading | End-User (Hypothetical) |
+| **REQ-N-009** | Scenario 1, 2, 3, 4 | End-User (Hypothetical) |
 
 ---
 
