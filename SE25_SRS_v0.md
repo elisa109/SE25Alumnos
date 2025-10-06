@@ -515,16 +515,3 @@ The Requirements Traceability Matrix (RTM) provides a clear correspondence betwe
 
 ---
 
-### Operational Scenarios
-
-The following operational scenarios describe typical interactions between the user and the robotic arm simulation system. Each scenario represents a specific operational context that groups a set of related functional and non-functional requirements. These scenarios serve as the foundation for requirement validation, system behavior analysis, and traceability within the Requirements Traceability Matrix (RTM).
-
-| Scenario ID | Scenario Name | Description |
-| :--- | :--- | :--- |
-| **Scenario 0** | Development and Integration Setup | Covers configuration of the development environment, ROS 2 communication setup, and concurrent process configuration. |
-| **Scenario 1** | System Initialization and Robot/Environment Loading | The user launches the system, loads the 3D simulation, and imports the URDF robot model. |
-| **Scenario 2** | Manual Control of the Robotic Arm | The user manipulates individual joints and observes real-time pose updates through the GUI. |
-| **Scenario 3** | Automated Path Execution | Scenario 3: The user defines and executes a sequence of poses via the GUI. |
-| **Scenario 4** | Fault Detection and Response | The system detects collisions or anomalies and triggers automatic or manual emergency stop procedures. |
-| **Scenario 5** | Development and Configuration Management | Includes activities related to version control, branching, and collaborative development under Git. |
-| **Scenario 6** | Documentation and Quality Assurance | Ensures all project deliverables, SRS compliance, and documentation follow the established format and are under version control. |
