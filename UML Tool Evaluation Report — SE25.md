@@ -44,6 +44,9 @@ Each tool will be assessed according to the following:
 Each criterion will be scored on a **1–5 scale**
 
 
+
+--- 
+
 ## 2. Sample Diagrams
 
 
@@ -65,6 +68,10 @@ Each criterion will be scored on a **1–5 scale**
 
 
 
+
+
+--- 
+
 ## 3. Comparison Matrix
 
 
@@ -81,6 +88,10 @@ Each criterion will be scored on a **1–5 scale**
 | **Total (sum)** | **_** | **_** | **_** |
 
 
+
+
+
+--- 
 
 ## 4. Recommended Tool
 
