@@ -2,19 +2,19 @@
 
 ---
 
-1. [Introduction](#1-introduction)  
-   1.1 [Scope & Objectives](#11-scope--objectives) 
-   1.2 [Tools Under Evaluation](#12-tools-under-evaluation)
-   1.3 [Evaluation Methodology](#13-evaluation-methodology) 
+1. [Introduction](#1-introduction)    
+   1.1 [Scope & Objectives](#11-scope--objectives)     
+   1.2 [Tools Under Evaluation](#12-tools-under-evaluation)    
+   1.3 [Evaluation Methodology](#13-evaluation-methodology)     
   
-2.[Sample Diagrams](#9-sample-diagrams)
-   2.1 [Eclipse Papyrus](#21-eclipse-papyrus) 
-   2.2 [Modelio](#22-modelio)  
-   2.3 [IBM Rhapsody](#23-ibm-rhapsody)
+2.[Sample Diagrams](#9-sample-diagrams)   
+   2.1 [Eclipse Papyrus](#21-eclipse-papyrus)   
+   2.2 [Modelio](#22-modelio)    
+   2.3 [IBM Rhapsody](#23-ibm-rhapsody)  
 
-3. [Comparison Matrix](#3-comparison-matrix) 
+3. [Comparison Matrix](#3-comparison-matrix)   
 
-4. [Recommended Tool](#4-recommended-tool) 
+4. [Recommended Tool](#4-recommended-tool)   
 
 
 ## 1. Introduction 
