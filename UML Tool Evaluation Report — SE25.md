@@ -59,13 +59,13 @@ Each criterion will be scored on a **1–5 scale**
 ### 2.1 Eclipse Papyrus  
 
 - #### 2.1.1 Eclipse Papyrus Overview   
-1. **Overview:** _(Summary of features and enterprise capabilities.)_  
-2. **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
-3. **User Experience:** _(Interface clarity, complexity, learning curve.)_  
-4. **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
-5. **Performance & Stability:** _(System load, stability, responsiveness)_   
-6. **Licensing:** _(Academic license terms, renewal requirements)_   
-7. **Integration with Workflow:**  
+  - **Overview:** _(Summary of features and enterprise capabilities.)_  
+  - **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
+  - **User Experience:** _(Interface clarity, complexity, learning curve.)_  
+  - **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+  - **Performance & Stability:** _(System load, stability, responsiveness)_   
+  - **Licensing:** _(Academic license terms, renewal requirements)_   
+  - **Integration with Workflow:**  
     - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
     - **Git file management:** _(Binary size, repo impact, versioning)_  
     - **Image export:** _(Quality, supported formats)_   
@@ -78,16 +78,16 @@ Each criterion will be scored on a **1–5 scale**
 
 ### 2.2 Modelio
  - #### 2.2.1 Modelio Overview  
-1. **Overview:** _(Summary of features and enterprise capabilities.)_  
-2. **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
-3. **User Experience:** _(Interface clarity, complexity, learning curve.)_  
-4. **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
-5. **Performance & Stability:** _(System load, stability, responsiveness)_   
-6. **Licensing:** _(Academic license terms, renewal requirements)_   
-7. **Integration with Workflow:**  
-    - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
-    - **Git file management:** _(Binary size, repo impact, versioning)_  
-    - **Image export:** _(Quality, supported formats)_     
+    - **Overview:** _(Summary of features and enterprise capabilities.)_  
+    - **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
+    - **User Experience:** _(Interface clarity, complexity, learning curve.)_  
+    - **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+    - **Performance & Stability:** _(System load, stability, responsiveness)_   
+    - **Licensing:** _(Academic license terms, renewal requirements)_   
+    - **Integration with Workflow:**  
+      - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
+      - **Git file management:** _(Binary size, repo impact, versioning)_  
+      - **Image export:** _(Quality, supported formats)_      
   
 
 
@@ -103,16 +103,16 @@ Each criterion will be scored on a **1–5 scale**
 ### 2.3 IBM Rhapsody
 
 - #### 2.3.1 IBM Rhapsody Overview   
-1. **Overview:** _(Summary of features and enterprise capabilities.)_  
-2. **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
-3. **User Experience:** _(Interface clarity, complexity, learning curve.)_  
-4. **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
-5. **Performance & Stability:** _(System load, stability, responsiveness)_   
-6. **Licensing:** _(Academic license terms, renewal requirements)_   
-7. **Integration with Workflow:**  
+  - **Overview:** _(Summary of features and enterprise capabilities.)_  
+  - **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
+  - **User Experience:** _(Interface clarity, complexity, learning curve.)_  
+  - **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+  - **Performance & Stability:** _(System load, stability, responsiveness)_   
+  - **Licensing:** _(Academic license terms, renewal requirements)_   
+  - **Integration with Workflow:**  
     - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
     - **Git file management:** _(Binary size, repo impact, versioning)_  
-    - **Image export:** _(Quality, supported formats)_      
+    - **Image export:** _(Quality, supported formats)_     
 
 - #### 2.3.2 IBM Rhapsody Diagrams  
 
