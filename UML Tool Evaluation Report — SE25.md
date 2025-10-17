@@ -43,9 +43,9 @@ Each tool will be assessed according to the following:
   1. **Ease of Installation & Setup** (on Ubuntu 24.04 LTS)  
   2. **Learning Curve & Documentation** (user-friendliness and learning resources)  
   3. **UML Diagram Support & Standard Compliance** (Class, Sequence, State Machine)  
-  4. **Integration with Project Workflow:**
+  4. **Integration with Project Workflow:**  
   5. **Performance & Stability**  
-  6. **Licensing Terms**
+  6. **Licensing Terms**  
 
 Each criterion will be scored on a **1–5 scale**
 
@@ -63,13 +63,12 @@ Each criterion will be scored on a **1–5 scale**
 **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
 **User Experience:** _(Interface clarity, complexity, learning curve.)_  
 **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+**Performance & Stability:** _(System load, stability, responsiveness)_   
+**Licensing:** _(Academic license terms, renewal requirements)_   
 **Integration with Workflow:**  
 - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
 - **Git file management:** _(Binary size, repo impact, versioning)_  
-- **Image export:** _(Quality, supported formats)_  
-**Performance & Stability:** _(System load, stability, responsiveness)_  
-**Licensing:** _(Academic license terms, renewal requirements)_ 
-
+- **Image export:** _(Quality, supported formats)_   
 
 #### 2.1.2 Eclipse Papyrus Diagrams
 
@@ -83,12 +82,13 @@ Each criterion will be scored on a **1–5 scale**
 **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
 **User Experience:** _(Interface clarity, complexity, learning curve.)_  
 **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+**Performance & Stability:** _(System load, stability, responsiveness)_   
+**Licensing:** _(Academic license terms, renewal requirements)_   
 **Integration with Workflow:**  
 - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
 - **Git file management:** _(Binary size, repo impact, versioning)_  
-- **Image export:** _(Quality, supported formats)_  
-**Performance & Stability:** _(System load, stability, responsiveness)_  
-**Licensing:** _(Academic license terms, renewal requirements)_ 
+- **Image export:** _(Quality, supported formats)_   
+
 
 
 
@@ -107,12 +107,12 @@ Each criterion will be scored on a **1–5 scale**
 **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
 **User Experience:** _(Interface clarity, complexity, learning curve.)_  
 **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+**Performance & Stability:** _(System load, stability, responsiveness)_   
+**Licensing:** _(Academic license terms, renewal requirements)_   
 **Integration with Workflow:**  
 - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
 - **Git file management:** _(Binary size, repo impact, versioning)_  
-- **Image export:** _(Quality, supported formats)_  
-**Performance & Stability:** _(System load, stability, responsiveness)_  
-**Licensing:** _(Academic license terms, renewal requirements)_ 
+- **Image export:** _(Quality, supported formats)_   
 
 #### 2.3.2 IBM Rhapsody Diagrams  
 
