@@ -59,16 +59,21 @@ Each criterion will be scored on a **1–5 scale**
 ### 2.1 Eclipse Papyrus  
 
 - #### 2.1.1 Eclipse Papyrus Overview   
-  - **Overview:** _(Summary of features and enterprise capabilities.)_  
-  - **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
-  - **User Experience:** _(Interface clarity, complexity, learning curve.)_  
-  - **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
-  - **Performance & Stability:** _(System load, stability, responsiveness)_   
-  - **Licensing:** _(Academic license terms, renewal requirements)_   
+  - **Overview:** Eclipse Papyrus is an open-source modeling tool based on the Eclipse platform. It supports full UML 2.x and SysML modeling, and allows the use of custom profiles. It’s suitable for academic and engineering projects, especially when working with complex systems. The tool is extensible through plug-ins and follows OMG standards.
+  - **Installation (Ubuntu 24.04):** Papyrus is installed as a plug-in inside Eclipse (via Help → Install New Software). It requires Java JDK and some initial configuration. The installation process is manageable with the help of the official documentation. Once set up, it works well on Ubuntu 24.04 LTS.
+  - **User Experience:** The interface is quite detailed and offers many features, but it can be difficult to use at first. Users need to understand how Eclipse handles modeling files (.uml, .notation, .di). Once familiar with the environment, it becomes easier to manage diagrams and models.
+  - **UML Support:** Papyrus supports all major UML 2.x diagrams, including:
+    - Class Diagrams
+    - Sequence Diagrams
+    - State Machine Diagrams
+    - Use Case, Component, Deployment, Activity Diagrams
+  - **Performance & Stability:** The tool runs stably on standard hardware. Models may slow down the interface, but during our usage, we didn’t encounter any crashes or major issues.
+  - **Licensing:** Papyrus is fully open source under the Eclipse Public License (EPL). All features are available without restrictions.
   - **Integration with Workflow:**  
-    - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
-    - **Git file management:** _(Binary size, repo impact, versioning)_  
-    - **Image export:** _(Quality, supported formats)_   
+    - **C++ / Ubuntu integration:** Papyrus does not generate C++ code directly, but it can be used within Eclipse-based development environments. It’s useful for design and documentation purposes.
+    - **Git file management:** The modeling files are XML-based. While they can be versioned with Git, the file diffs are not easily readable.
+    - **Image export:** Diagrams can be exported as PNG, SVG, or PDF. The quality is good for documentation and wiki pages.
+
 
 - #### 2.1.2 Eclipse Papyrus Diagrams
 
