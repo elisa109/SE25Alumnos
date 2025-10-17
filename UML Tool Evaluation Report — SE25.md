@@ -129,7 +129,10 @@ Each criterion will be scored on a **1–5 scale**
     - **Git file management:** _(Binary size, repo impact, versioning)_  
     - **Image export:** _(Quality, supported formats)_     
 
-- #### 2.3.2 IBM Rhapsody Diagrams  
+- #### 2.3.2 IBM Rhapsody Diagrams
+  - **Class Diagram:**
+  - **Sequence Diagram**
+  - **State Machine Diagram**
 
   
   
