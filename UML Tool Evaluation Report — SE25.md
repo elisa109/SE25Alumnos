@@ -79,11 +79,17 @@ Each criterion will be scored on a **1–5 scale**
   - **Class Diagram:** 
 <img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/ClassDiagram.png" />
   - **Sequence Diagram:** Here all the 4 scenarios developed for the problem
+ 
+    
 <img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario1-SD.png" />
 <img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario2-SD.png" />
 <img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario3-SD.png" />
 <img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario4-SD.png" />
-  - **State Machine Diagram:**   
+
+
+  - **State Machine Diagram:**
+
+  -  
 <img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/StateMach.png" />    
 
 
