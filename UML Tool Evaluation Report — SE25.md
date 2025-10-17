@@ -78,16 +78,16 @@ Each criterion will be scored on a **1–5 scale**
 
 ### 2.2 Modelio
  - #### 2.2.1 Modelio Overview  
-    - **Overview:** _(Summary of features and enterprise capabilities.)_  
-    - **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
-    - **User Experience:** _(Interface clarity, complexity, learning curve.)_  
-    - **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
-    - **Performance & Stability:** _(System load, stability, responsiveness)_   
-    - **Licensing:** _(Academic license terms, renewal requirements)_   
+    - **Overview:** _Modelio is a versatile open-source modeling tool that supports UML, BPMN, ArchiMate, and TOGAF standards. It offers enterprise-grade features such as requirements management, code generation (Java, C++, etc.), and documentation export. Its modular architecture and support for scripting make it highly extensible for complex modeling needs._  
+    - **Installation (Ubuntu 24.04):** _Modelio installs easily on Ubuntu 24.04 LTS via Snap (sudo snap install modelio) with no additional configuration required. It runs smoothly out of the box and supports automatic updates, making it suitable for enterprise environments with minimal setup overhead._  
+    - **User Experience:** _While Modelio’s interface may feel technical at first, it is well-documented and supported by a strong community. Tutorials and guides are available for both beginners and advanced users, making the learning curve manageable with some initial effort._  
+    - **UML Support:** _Modelio provides full support for UML2 diagrams, including Class, Sequence, and State Machine diagrams. It enforces UML standards and allows for detailed modeling with validation rules, making it suitable for both academic and professional software design._  
+    - **Performance & Stability:** _The application performs reliably on typical development machines and is not resource-intensive. It remains stable during extended modeling sessions and handles large models without noticeable lag or crashes._   
+    - **Licensing:** _Modelio is fully open source under GPLv3 for its core, with additional modules licensed under Apache 2.0. There are no functional limitations in the free version, making it a strong candidate for teams seeking a cost-effective modeling solution._   
     - **Integration with Workflow:**  
-      - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
-      - **Git file management:** _(Binary size, repo impact, versioning)_  
-      - **Image export:** _(Quality, supported formats)_      
+      - **C++ / Ubuntu integration:** _Modelio supports code generation for C++ and runs natively on Ubuntu 24.04 LTS via Snap, making it compatible with typical Linux-based development environments. While it doesn't integrate directly with build systems like CMake or IDEs such as VS Code, its generated code can be easily incorporated into existing workflows. This makes it suitable for teams using C++ on Ubuntu, provided that Modelio is used primarily for design and documentation rather than full-cycle development._  
+      - **Git file management:** _Modelio stores models in XML-based formats, which are lightweight and version-control friendly. Unlike binary-heavy tools, its files can be tracked efficiently in Git repositories without causing bloat. This allows for clean diffs, branching, and collaborative versioning, making Modelio a good fit for teams managing models alongside source code in GitHub or other Git platforms._  
+      - **Image export:** _Modelio supports exporting diagrams to standard image formats including PNG, SVG, and PDF. The export quality is suitable for technical documentation, presentations, and Markdown-based wikis. This ensures that visual assets from Modelio can be seamlessly integrated into GitHub README files, project documentation, and collaborative design reviews._      
   
 
 
