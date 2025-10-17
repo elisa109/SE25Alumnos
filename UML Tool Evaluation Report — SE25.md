@@ -7,10 +7,16 @@
   - [1.1 Scope & Objectives](#11-scope--objectives)
   - [1.2 Tools Under Evaluation](#12-tools-under-evaluation)
   - [1.3 Evaluation Methodology](#13-evaluation-methodology)
-- [2. Sample Diagrams](#2-sample-diagrams)
-  - [2.1 Eclipse Papyrus](#21-eclipse-papyrus)
-  - [2.2 Modelio](#22-modelio)
-  - [2.3 IBM Rhapsody](#23-ibm-rhapsody)
+- [2. Detailed Evaluation](#2-detailed-evaluation)  
+  - [2.1 Eclipse Papyrus](#21-eclipse-papyrus)  
+    -[2.1.1 Eclipse Papyrus Overview](#211-eclipse-papyrus-overview)  
+    -[2.1.2 Eclipse Papyrus Diagrams](#212-eclipse-papyrus-diagrams)  
+  - [2.2 Modelio](#22-modelio)   
+    -[2.2.1 Modelio Overview](#221-modelio-overview)   
+    -[2.2.2 Modelio Diagrams](#222-modelio-diagrams)   
+  - [2.3 IBM Rhapsody](#23-ibm-rhapsody)   
+    -[2.3.1 IBM Rhapsody Overview](#231-ibm-rhapsody-overview)      
+    -[2.3.2 IBM Rhapsody Diagrams](#232-ibm-rhapsody-diagrams)    
 - [3. Comparison Matrix](#3-comparison-matrix)
 - [4. Recommended Tool](#4-recommended-tool) 
 
@@ -47,28 +53,73 @@ Each criterion will be scored on a **1–5 scale**
 
 --- 
 
-## 2. Sample Diagrams
+## 2. Detailed Evaluation
 
 
-### 2.1 Eclipse Papyrus
+### 2.1 Eclipse Papyrus  
+
+#### 2.1.1 Eclipse Papyrus Overview   
+**Overview:** _(Summary of features and enterprise capabilities.)_  
+**Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
+**User Experience:** _(Interface clarity, complexity, learning curve.)_  
+**UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+**Integration with Workflow:**  
+- **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
+- **Git file management:** _(Binary size, repo impact, versioning)_  
+- **Image export:** _(Quality, supported formats)_  
+**Performance & Stability:** _(System load, stability, responsiveness)_  
+**Licensing:** _(Academic license terms, renewal requirements)_ 
+
+
+#### 2.1.2 Eclipse Papyrus Diagrams
+
 
 
 
 
 ### 2.2 Modelio
+#### 2.2.1 Modelio Overview  
+**Overview:** _(Summary of features and enterprise capabilities.)_  
+**Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
+**User Experience:** _(Interface clarity, complexity, learning curve.)_  
+**UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+**Integration with Workflow:**  
+- **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
+- **Git file management:** _(Binary size, repo impact, versioning)_  
+- **Image export:** _(Quality, supported formats)_  
+**Performance & Stability:** _(System load, stability, responsiveness)_  
+**Licensing:** _(Academic license terms, renewal requirements)_ 
 
 
+
+#### 2.2.2 Modelio Diagrams  
+
+
+
+        
 
 
 
 ### 2.3 IBM Rhapsody
 
+#### 2.3.1 IBM Rhapsody Overview   
+**Overview:** _(Summary of features and enterprise capabilities.)_  
+**Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
+**User Experience:** _(Interface clarity, complexity, learning curve.)_  
+**UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+**Integration with Workflow:**  
+- **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
+- **Git file management:** _(Binary size, repo impact, versioning)_  
+- **Image export:** _(Quality, supported formats)_  
+**Performance & Stability:** _(System load, stability, responsiveness)_  
+**Licensing:** _(Academic license terms, renewal requirements)_ 
 
+#### 2.3.2 IBM Rhapsody Diagrams  
 
-
-
-
-
+  
+  
+  
+  
 
 --- 
 
