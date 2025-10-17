@@ -98,10 +98,12 @@ Each criterion will be scored on a **1–5 scale**
 
 
 - #### 2.2.2 Modelio Diagrams  
-
-
-
-        
+  - **Class Diagram:** _
+<img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_Class.png" />_
+  - **Sequence Diagram:** _
+<img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_Seq.png" />_
+  - **State Machine Diagram:** _
+<img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_StateMachine.png" />_     
 
 
 
