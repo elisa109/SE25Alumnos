@@ -74,7 +74,7 @@ Each criterion will be scored on a **1–5 scale**
 
 
 
----
+
 
 ### 2.2 Modelio
  - #### 2.2.1 Modelio Overview  
@@ -98,7 +98,7 @@ Each criterion will be scored on a **1–5 scale**
 
         
 
----
+
 
 ### 2.3 IBM Rhapsody
 
