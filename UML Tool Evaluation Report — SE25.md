@@ -76,7 +76,13 @@ Each criterion will be scored on a **1–5 scale**
 
 
 - #### 2.1.2 Eclipse Papyrus Diagrams
+![Sequence Diagram]([[docs/diagrams/class – Scenario 1](https://github.com/danieldalascio/docs/blob/main/Scenario1-SD.png](https://github.com/danieldalascio/docs/blob/main/Scenario1-SD.png))
+![Sequence Diagram]([[docs/diagrams/class – Scenario 2](https://github.com/danieldalascio/docs/blob/main/Scenario2-SD.png](https://github.com/danieldalascio/docs/blob/main/Scenario2-SD.png))
+![Sequence Diagram]([docs/diagrams/class – Scenario 3](https://github.com/danieldalascio/docs/blob/main/Scenario3-SD.png)
+![Sequence Diagram]([docs/diagrams/class – Scenario 4](https://github.com/danieldalascio/docs/blob/main/Scenario4-SD.png)
 
+![Class Diagram]([docs/diagramsine Diagram – Arm Lifecycle](https://github.com/danieldalascio/docs/blob/main/ClassDiagram.png)
+![State Machine Diagram]([docs/diagrams/state_machine](https://github.com/danieldalascio/docs/blob/main/StateMach.png)
 
 
 
