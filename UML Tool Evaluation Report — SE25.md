@@ -63,20 +63,20 @@ Each criterion is scored on a **1–5 scale**.
 
 #### 2.1.1 Eclipse Papyrus Overview
 
-- **Overview:** Eclipse Papyrus is an open-source modeling tool based on the Eclipse platform. It supports full UML 2.x and SysML modeling and allows the use of custom profiles. It’s suitable for academic and engineering projects, especially when working with complex systems. The tool is extensible through plug-ins and follows OMG standards.
-- **Installation (Ubuntu 24.04):** Installing Papyrus on Ubuntu 24.04 LTS wasn’t exactly quick or easy. It took quite some time to get everything running, especially since the setup required first installing Ubuntu through WSL and then configuring Eclipse Modeling with the Papyrus plug-in. The process involves several manual steps and can feel technical at first — you need to handle dependencies and use the correct Eclipse package. Once set up, Papyrus launched correctly and worked without issues. It just requires patience and careful setup the first time.
-- **User Experience:** The interface is detailed and feature-rich but has a learning curve. Users must understand how Eclipse handles modeling files (`.uml`, `.notation`, `.di`). Once familiar, managing diagrams becomes intuitive.
-- **UML Support:** Supports all major UML 2.x diagrams:
-  - Class Diagrams  
-  - Sequence Diagrams  
-  - State Machine Diagrams  
-  - Use Case, Component, Deployment, and Activity Diagrams
-- **Performance & Stability:** Runs stably on standard hardware. Large models may slow down the interface, but no major crashes occurred during testing.
-- **Licensing:** Fully open-source under the Eclipse Public License (EPL). All features are available without restrictions.
+- **Overview:** _Eclipse Papyrus is an open-source modeling tool based on the Eclipse platform. It supports full UML 2.x and SysML modeling and allows the use of custom profiles. It’s suitable for academic and engineering projects, especially when working with complex systems. The tool is extensible through plug-ins and follows OMG standards._
+- **Installation (Ubuntu 24.04):** _Installing Papyrus on Ubuntu 24.04 LTS wasn’t exactly quick or easy. It took quite some time to get everything running, especially since the setup required first installing Ubuntu through WSL and then configuring Eclipse Modeling with the Papyrus plug-in. The process involves several manual steps and can feel technical at first — you need to handle dependencies and use the correct Eclipse package. Once set up, Papyrus launched correctly and worked without issues. It just requires patience and careful setup the first time._
+- **User Experience:** _The interface is detailed and feature-rich but has a learning curve. Users must understand how Eclipse handles modeling files (`.uml`, `.notation`, `.di`). Once familiar, managing diagrams becomes intuitive._
+- **UML Support:** _Supports all major UML 2.x diagrams:_
+  - _Class Diagrams_  
+  - _Sequence Diagrams_
+  - _State Machine Diagrams_
+  - _Use Case, Component, Deployment, and Activity Diagrams_
+- **Performance & Stability:** _Runs stably on standard hardware. Large models may slow down the interface, but no major crashes occurred during testing._
+- **Licensing:** _Fully open-source under the Eclipse Public License (EPL). All features are available without restrictions._
 - **Integration with Workflow:**
-  - **C++ / Ubuntu integration:** Does not generate C++ code directly but works well within Eclipse-based environments. Suitable for design and documentation.
-  - **Git file management:** Models are XML-based — versionable in Git, though diffs are not human-readable.
-  - **Image export:** Supports PNG, SVG, and PDF export with high quality suitable for documentation.
+  - **C++ / Ubuntu integration:** _Does not generate C++ code directly but works well within Eclipse-based environments. Suitable for design and documentation._
+  - **Git file management:** _Models are XML-based — versionable in Git, though diffs are not human-readable._
+  - **Image export:** _Supports PNG, SVG, and PDF export with high quality suitable for documentation._
 
 #### 2.1.2 Eclipse Papyrus Diagrams
 
