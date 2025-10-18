@@ -153,7 +153,7 @@ Each criterion will be scored on a **1–5 scale**
 | Integration: Export PNG/SVG | 4 | 5 | _ |
 | Performance & Stability | 4 | 5 | _ |
 | Licensing | 5 | 5 | _ |
-| **Total (sum)** | **_** | **37** | **_** |
+| **Total (sum)** | **30** | **37** | **_** |
 
 
 
