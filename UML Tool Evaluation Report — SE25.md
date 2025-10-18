@@ -152,15 +152,15 @@ Each criterion is scored on a **1–5 scale**.
 
 | Criterion | Papyrus | Modelio | IBM Rhapsody |
 |------------|:-------:|:-------:|:-------------:|
-| Ease of Installation & Setup | 3 | 5 | _ |
-| Learning Curve & Documentation | 2 | 4 | _ |
-| UML Diagram Support & Compliance | 5 | 5 | _ |
-| Integration: C++ / Ubuntu | 4 | 4 | _ |
-| Integration: Git Friendliness | 3 | 4 | _ |
-| Integration: Export PNG / SVG | 4 | 5 | _ |
-| Performance & Stability | 4 | 5 | _ |
-| Licensing | 5 | 5 | _ |
-| **Total (sum)** | **30** | **37** | **_** |
+| Ease of Installation & Setup | 3 | 5 | 1 |
+| Learning Curve & Documentation | 2 | 4 | 3 |
+| UML Diagram Support & Compliance | 5 | 5 | 5 |
+| Integration: C++ / Ubuntu | 4 | 4 | 3 |
+| Integration: Git Friendliness | 3 | 4 | 2 |
+| Integration: Export PNG / SVG | 4 | 5 | 4 |
+| Performance & Stability | 4 | 5 | 3 |
+| Licensing | 5 | 5 | 3 |
+| **Total (sum)** | **30** | **37** | **24** |
 
 ---
 
