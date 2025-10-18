@@ -3,189 +3,192 @@
 ---
 
 ## Table of Contents
+
 - [1. Introduction](#1-introduction)
   - [1.1 Scope & Objectives](#11-scope--objectives)
   - [1.2 Tools Under Evaluation](#12-tools-under-evaluation)
   - [1.3 Evaluation Methodology](#13-evaluation-methodology)
-- [2. Detailed Evaluation](#2-detailed-evaluation)  
-  - [2.1 Eclipse Papyrus](#21-eclipse-papyrus)  
-    -[2.1.1 Eclipse Papyrus Overview](#211-eclipse-papyrus-overview)  
-    -[2.1.2 Eclipse Papyrus Diagrams](#212-eclipse-papyrus-diagrams)  
-  - [2.2 Modelio](#22-modelio)   
-    -[2.2.1 Modelio Overview](#221-modelio-overview)   
-    -[2.2.2 Modelio Diagrams](#222-modelio-diagrams)   
-  - [2.3 IBM Rhapsody](#23-ibm-rhapsody)   
-    -[2.3.1 IBM Rhapsody Overview](#231-ibm-rhapsody-overview)      
-    -[2.3.2 IBM Rhapsody Diagrams](#232-ibm-rhapsody-diagrams)    
+- [2. Detailed Evaluation](#2-detailed-evaluation)
+  - [2.1 Eclipse Papyrus](#21-eclipse-papyrus)
+    - [2.1.1 Eclipse Papyrus Overview](#211-eclipse-papyrus-overview)
+    - [2.1.2 Eclipse Papyrus Diagrams](#212-eclipse-papyrus-diagrams)
+  - [2.2 Modelio](#22-modelio)
+    - [2.2.1 Modelio Overview](#221-modelio-overview)
+    - [2.2.2 Modelio Diagrams](#222-modelio-diagrams)
+  - [2.3 IBM Rhapsody](#23-ibm-rhapsody)
+    - [2.3.1 IBM Rhapsody Overview](#231-ibm-rhapsody-overview)
+    - [2.3.2 IBM Rhapsody Diagrams](#232-ibm-rhapsody-diagrams)
 - [3. Comparison Matrix](#3-comparison-matrix)
-- [4. Recommended Tool](#4-recommended-tool) 
+- [4. Recommended Tool](#4-recommended-tool)
 
+---
 
-## 1. Introduction 
+## 1. Introduction
 
 ### 1.1 Scope & Objectives
-**Purpose:** Select a single standardized UML modeling tool for the SE25 project as the team transitions from architecture to detailed design (Weeks 3–4).  
+
+**Purpose:** Select a single standardized UML modeling tool for the SE25 project as the team transitions from architecture to detailed design (Weeks 3–4).
 
 **Artifacts covered:** Class, Sequence, and State Machine diagrams.  
-**Deliverable:** This evaluation report and example diagrams exported from the selected tool.  
+**Deliverable:** This evaluation report and example diagrams exported from the selected tool.
 
+---
 
+### 1.2 Tools Under Evaluation
 
-## 1.2 Tools Under Evaluation
 1. **Eclipse Papyrus** — Open-source, standards-compliant UML tool integrated into the Eclipse IDE.  
 2. **Modelio** — Open-source UML modeling environment supporting a wide range of diagrams and models.  
 3. **IBM Rhapsody** — Professional Model-Based Systems Engineering (MBSE) tool. Academic licenses are available.
 
+---
 
-## 1.3 Evaluation Methodology
-Each tool will be assessed according to the following:
+### 1.3 Evaluation Methodology
 
-  1. **Ease of Installation & Setup** (on Ubuntu 24.04 LTS)  
-  2. **Learning Curve & Documentation** (user-friendliness and learning resources)  
-  3. **UML Diagram Support & Standard Compliance** (Class, Sequence, State Machine)  
-  4. **Integration with Project Workflow:**  
-  5. **Performance & Stability**  
-  6. **Licensing Terms**  
+Each tool is assessed according to the following criteria:
 
-Each criterion will be scored on a **1–5 scale**
+1. **Ease of Installation & Setup** (on Ubuntu 24.04 LTS)  
+2. **Learning Curve & Documentation** (user-friendliness and learning resources)  
+3. **UML Diagram Support & Standard Compliance** (Class, Sequence, State Machine)  
+4. **Integration with Project Workflow**  
+5. **Performance & Stability**  
+6. **Licensing Terms**
 
+Each criterion is scored on a **1–5 scale**.
 
-
---- 
+---
 
 ## 2. Detailed Evaluation
 
+### 2.1 Eclipse Papyrus
 
-### 2.1 Eclipse Papyrus  
+#### 2.1.1 Eclipse Papyrus Overview
 
-- #### 2.1.1 Eclipse Papyrus Overview   
-  - **Overview:** Eclipse Papyrus is an open-source modeling tool based on the Eclipse platform. It supports full UML 2.x and SysML modeling, and allows the use of custom profiles. It’s suitable for academic and engineering projects, especially when working with complex systems. The tool is extensible through plug-ins and follows OMG standards.
-  - **Installation (Ubuntu 24.04):** Installing Papyrus on Ubuntu 24.04 LTS wasn’t exactly quick or easy. It took quite some time to get everything running, especially since the setup required first installing Ubuntu through WSL and then configuring Eclipse Modeling with the Papyrus plug-in on top of it. The process involves several manual steps and can feel a bit technical at first — you need to handle dependencies and make sure the correct Eclipse package is used. Once everything was finally in place, Papyrus launched correctly and worked without further issues. Overall, it just takes some patience and careful setup the first time you install it.
-  - **User Experience:** The interface is quite detailed and offers many features, but it can be difficult to use at first. Users need to understand how Eclipse handles modeling files (.uml, .notation, .di). Once familiar with the environment, it becomes easier to manage diagrams and models.
-  - **UML Support:** Papyrus supports all major UML 2.x diagrams, including:
-    - Class Diagrams
-    - Sequence Diagrams
-    - State Machine Diagrams
-    - Use Case, Component, Deployment, Activity Diagrams
-  - **Performance & Stability:** The tool runs stably on standard hardware. Models may slow down the interface, but during our usage, we didn’t encounter any crashes or major issues.
-  - **Licensing:** Papyrus is fully open source under the Eclipse Public License (EPL). All features are available without restrictions.
-  - **Integration with Workflow:**  
-    - **C++ / Ubuntu integration:** Papyrus does not generate C++ code directly, but it can be used within Eclipse-based development environments. It’s useful for design and documentation purposes.
-    - **Git file management:** The modeling files are XML-based. While they can be versioned with Git, the file diffs are not easily readable.
-    - **Image export:** Diagrams can be exported as PNG, SVG, or PDF. The quality is good for documentation and wiki pages.
+- **Overview:** Eclipse Papyrus is an open-source modeling tool based on the Eclipse platform. It supports full UML 2.x and SysML modeling and allows the use of custom profiles. It’s suitable for academic and engineering projects, especially when working with complex systems. The tool is extensible through plug-ins and follows OMG standards.
+- **Installation (Ubuntu 24.04):** Installing Papyrus on Ubuntu 24.04 LTS wasn’t exactly quick or easy. It took quite some time to get everything running, especially since the setup required first installing Ubuntu through WSL and then configuring Eclipse Modeling with the Papyrus plug-in. The process involves several manual steps and can feel technical at first — you need to handle dependencies and use the correct Eclipse package. Once set up, Papyrus launched correctly and worked without issues. It just requires patience and careful setup the first time.
+- **User Experience:** The interface is detailed and feature-rich but has a learning curve. Users must understand how Eclipse handles modeling files (`.uml`, `.notation`, `.di`). Once familiar, managing diagrams becomes intuitive.
+- **UML Support:** Supports all major UML 2.x diagrams:
+  - Class Diagrams  
+  - Sequence Diagrams  
+  - State Machine Diagrams  
+  - Use Case, Component, Deployment, and Activity Diagrams
+- **Performance & Stability:** Runs stably on standard hardware. Large models may slow down the interface, but no major crashes occurred during testing.
+- **Licensing:** Fully open-source under the Eclipse Public License (EPL). All features are available without restrictions.
+- **Integration with Workflow:**
+  - **C++ / Ubuntu integration:** Does not generate C++ code directly but works well within Eclipse-based environments. Suitable for design and documentation.
+  - **Git file management:** Models are XML-based — versionable in Git, though diffs are not human-readable.
+  - **Image export:** Supports PNG, SVG, and PDF export with high quality suitable for documentation.
 
+#### 2.1.2 Eclipse Papyrus Diagrams
 
-- #### 2.1.2 Eclipse Papyrus Diagrams
-  - **Class Diagram:**  
-    <img width="2335" height="1240" alt="Class Diagram" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/ClassDiagram.png" />
-  - **Sequence Diagram:** Here all the 4 scenarios developed for the problem  
-    <img width="2335" height="1240" alt="Scenario 1" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario1-SD.png" />
-    <img width="2335" height="1240" alt="Scenario 2" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario2-SD.png" />
-    <img width="2335" height="1240" alt="Scenario 3" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario3-SD.png" />
-    <img width="2335" height="1240" alt="Scenario 4" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario4-SD.png" />
-  - **State Machine Diagram:**  
-    <img width="2335" height="1240" alt="State Machine Diagram" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/StateMach.png" />
+- **Class Diagram:**  
+  <img width="2335" height="1240" alt="Class Diagram" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/ClassDiagram.png" />
 
+- **Sequence Diagrams (4 Scenarios):**  
+  <img width="2335" height="1240" alt="Scenario 1" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario1-SD.png" />  
+  <img width="2335" height="1240" alt="Scenario 2" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario2-SD.png" />  
+  <img width="2335" height="1240" alt="Scenario 3" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario3-SD.png" />  
+  <img width="2335" height="1240" alt="Scenario 4" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Scenario4-SD.png" />
 
+- **State Machine Diagram:**  
+  <img width="2335" height="1240" alt="State Machine Diagram" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/StateMach.png" />
+
+---
 
 ### 2.2 Modelio
- - #### 2.2.1 Modelio Overview  
-    - **Overview:** _Modelio is a versatile open-source modeling tool that supports UML, BPMN, ArchiMate, and TOGAF standards. It offers enterprise-grade features such as requirements management, code generation (Java, C++, etc.), and documentation export. Its modular architecture and support for scripting make it highly extensible for complex modeling needs._  
-    - **Installation (Ubuntu 24.04):** _Modelio installs easily on Ubuntu 24.04 LTS via Snap (sudo snap install modelio) with no additional configuration required. It runs smoothly out of the box and supports automatic updates, making it suitable for enterprise environments with minimal setup overhead._  
-    - **User Experience:** _While Modelio’s interface may feel technical at first, it is well-documented and supported by a strong community. Tutorials and guides are available for both beginners and advanced users, making the learning curve manageable with some initial effort._  
-    - **UML Support:** _Modelio provides full support for UML2 diagrams, including Class, Sequence, and State Machine diagrams. It enforces UML standards and allows for detailed modeling with validation rules, making it suitable for both academic and professional software design._  
-    - **Performance & Stability:** _The application performs reliably on typical development machines and is not resource-intensive. It remains stable during extended modeling sessions and handles large models without noticeable lag or crashes._   
-    - **Licensing:** _Modelio is fully open source under GPLv3 for its core, with additional modules licensed under Apache 2.0. There are no functional limitations in the free version, making it a strong candidate for teams seeking a cost-effective modeling solution._   
-    - **Integration with Workflow:**  
-      - **C++ / Ubuntu integration:** _Modelio supports code generation for C++ and runs natively on Ubuntu 24.04 LTS via Snap, making it compatible with typical Linux-based development environments. While it doesn't integrate directly with build systems like CMake or IDEs such as VS Code, its generated code can be easily incorporated into existing workflows. This makes it suitable for teams using C++ on Ubuntu, provided that Modelio is used primarily for design and documentation rather than full-cycle development._  
-      - **Git file management:** _Modelio stores models in XML-based formats, which are lightweight and version-control friendly. Unlike binary-heavy tools, its files can be tracked efficiently in Git repositories without causing bloat. This allows for clean diffs, branching, and collaborative versioning, making Modelio a good fit for teams managing models alongside source code in GitHub or other Git platforms._  
-      - **Image export:** _Modelio supports exporting diagrams to standard image formats including PNG, SVG, and PDF. The export quality is suitable for technical documentation, presentations, and Markdown-based wikis. This ensures that visual assets from Modelio can be seamlessly integrated into GitHub README files, project documentation, and collaborative design reviews._      
-  
 
+#### 2.2.1 Modelio Overview
 
+- **Overview:** _Modelio is a versatile open-source modeling tool supporting UML, BPMN, ArchiMate, and TOGAF standards. It offers enterprise-grade features like requirements management, code generation (Java, C++), and documentation export. Its modular and scriptable architecture makes it highly extensible._
+- **Installation (Ubuntu 24.04):** _Easily installed via Snap (`sudo snap install modelio`) with no extra configuration. Runs smoothly out of the box with automatic updates, ideal for low-maintenance environments._
+- **User Experience:** _Though technical at first glance, Modelio’s interface is well-documented. Tutorials and community support ease the learning curve._
+- **UML Support:** _Full UML 2.x compliance, including Class, Sequence, and State Machine diagrams. Enforces modeling standards with built-in validation._
+- **Performance & Stability:** _Lightweight, reliable, and stable for large models._
+- **Licensing:** _Open-source under GPLv3 (core) and Apache 2.0 (modules). No functional limitations._
+- **Integration with Workflow:**
+  - **C++ / Ubuntu integration:** _Supports C++ code generation and runs natively on Ubuntu. Generated code integrates easily with existing workflows._
+  - **Git file management:** _XML-based models are Git-friendly — clean diffs, efficient tracking, and collaborative versioning._
+  - **Image export:** _Exports to PNG, SVG, and PDF with documentation-ready quality._
 
-- #### 2.2.2 Modelio Diagrams  
-  - **Class Diagram:** _
-<img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_Class.png" />_
-  - **Sequence Diagram:** _
-<img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_Seq.png" />_
-  - **State Machine Diagram:** _
-<img width="2335" height="1240" alt="image" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_StateMachine.png" />_     
+#### 2.2.2 Modelio Diagrams
 
+- **Class Diagram:**  
+  <img width="2335" height="1240" alt="Modelio Class Diagram" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_Class.png" />
 
+- **Sequence Diagram:**  
+  <img width="2335" height="1240" alt="Modelio Sequence Diagram" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_Seq.png" />
+
+- **State Machine Diagram:**  
+  <img width="2335" height="1240" alt="Modelio State Machine" src="https://github.com/elisa109/SE25Alumnos/blob/main/docs/images/Modelio_StateMachine.png" />
+
+---
 
 ### 2.3 IBM Rhapsody
 
-- #### 2.3.1 IBM Rhapsody Overview   
-  - **Overview:** _(Summary of features and enterprise capabilities.)_  
-  - **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
-  - **User Experience:** _(Interface clarity, complexity, learning curve.)_  
-  - **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
-  - **Performance & Stability:** _(System load, stability, responsiveness)_   
-  - **Licensing:** _(Academic license terms, renewal requirements)_   
-  - **Integration with Workflow:**  
-    - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility)_  
-    - **Git file management:** _(Binary size, repo impact, versioning)_  
-    - **Image export:** _(Quality, supported formats)_     
+#### 2.3.1 IBM Rhapsody Overview
 
-- #### 2.3.2 IBM Rhapsody Diagrams
-  - **Class Diagram:**
-  - **Sequence Diagram**
-  - **State Machine Diagram**
+- **Overview:** _(Summary of features and enterprise capabilities.)_  
+- **Installation (Ubuntu 24.04):** _(Complexity, dependencies, setup notes.)_  
+- **User Experience:** _(Interface clarity, complexity, learning curve.)_  
+- **UML Support:** _(UML compliance, diagram richness, modeling depth.)_  
+- **Performance & Stability:** _(System load, stability, responsiveness.)_  
+- **Licensing:** _(Academic license terms, renewal requirements.)_  
+- **Integration with Workflow:**
+  - **C++ / Ubuntu integration:** _(Build integrations, code gen, workflow compatibility.)_  
+  - **Git file management:** _(Binary size, repo impact, versioning.)_  
+  - **Image export:** _(Quality, supported formats.)_
 
-  
-  
-  
-  
+#### 2.3.2 IBM Rhapsody Diagrams
 
---- 
+- **Class Diagram:**  
+- **Sequence Diagram:**  
+- **State Machine Diagram:**
+
+---
 
 ## 3. Comparison Matrix
 
-
 | Criterion | Papyrus | Modelio | IBM Rhapsody |
-|---|:--:|:--:|:--:|
+|------------|:-------:|:-------:|:-------------:|
 | Ease of Installation & Setup | 3 | 5 | _ |
 | Learning Curve & Documentation | 2 | 4 | _ |
 | UML Diagram Support & Compliance | 5 | 5 | _ |
-| Integration: C++/Ubuntu | 4 | 4 | _ |
-| Integration: Git friendliness | 3 | 4 | _ |
-| Integration: Export PNG/SVG | 4 | 5 | _ |
+| Integration: C++ / Ubuntu | 4 | 4 | _ |
+| Integration: Git Friendliness | 3 | 4 | _ |
+| Integration: Export PNG / SVG | 4 | 5 | _ |
 | Performance & Stability | 4 | 5 | _ |
 | Licensing | 5 | 5 | _ |
 | **Total (sum)** | **30** | **37** | **_** |
 
-
-
-
-
---- 
+---
 
 ## 4. Recommended Tool
 
+### Option A — Eclipse Papyrus
+
 **Selected Tool:** **Eclipse Papyrus**
 
-**Concise Justification:**
-Eclipse Papyrus is selected as the standard UML tool for the SE25 project. Despite its initial learning curve, its strategic advantages in technical rigor and deep integration with the development ecosystem make it the most robust and professional choice for the long term.
+**Justification:**
 
--   **Maximum Standards Compliance and Quality:** A key project priority is to generate design artifacts that are precise, maintainable, and rigorous. Papyrus (`5/5` in UML Support) ensures the strictest adherence to OMG standards, guaranteeing that our diagrams are technically impeccable.
+Eclipse Papyrus is selected as the standard UML tool for the SE25 project. Despite its learning curve, its rigor and integration with the Eclipse ecosystem make it the most robust and professional long-term choice.
 
--   **Deep Integration with the Development Environment:** The ability for Papyrus (`4/5` in Integration) to operate directly within the Eclipse IDE is a decisive advantage. It allows the team to work on design models and C++ code in a unified environment, improving consistency and streamlining the workflow.
+- **Standards Compliance:** Strict adherence to OMG UML standards (`5/5`).
+- **Workflow Integration:** Directly within Eclipse (`4/5`), enabling design and code in one environment.
+- **Robustness:** Mature, stable (`4/5`), open-source (`5/5`), and extensible.
 
--   **Robustness and Maturity for Complex Projects:** Papyrus is a mature, stable (`4/5` in Stability), and open-source (`5/5` in Licensing) tool designed for complex engineering projects. The initial time investment in learning the tool will be repaid by its power and extensibility throughout the project's lifecycle.
+**Summary:** The team prioritizes technical quality and workflow integration over ease of use — a strategic investment in engineering rigor.
 
-In summary, the team values technical quality and deep workflow integration over initial ease of use. **We choose Papyrus as a strategic investment** in the quality and professionalism of our engineering designs.
+---
+
+### Option B — Modelio
 
 **Selected Tool:** **Modelio**
 
-**Concise Justification:**
-Modelio is selected as the standard UML tool for the SE25 project because it offers the optimal balance of usability, power, and seamless integration with our modern development workflow.
+**Justification:**
 
--   **Immediate Team Productivity:** Modelio stands out for its exceptional ease of installation and use (`5/5` and `4/5`, respectively). Unlike tools with a steep learning curve, it will enable all team members to become productive and create high-quality diagrams efficiently from day one.
+Modelio offers the optimal balance of usability, performance, and integration with a modern development workflow.
 
--   **Superior Workflow Synergy:** The tool is perfectly aligned with our development practices. Its lightweight and stable performance (`5/5`), excellent Git compatibility (`4/5`) for collaborative work, and high-quality image exports (`5/5`) for documentation meet all our technical requirements without compromise.
+- **Ease of Use:** Quick installation (`5/5`) and intuitive learning curve (`4/5`).
+- **Workflow Synergy:** Excellent Git compatibility (`4/5`) and high-quality exports (`5/5`).
+- **Licensing & Support:** 100% open-source with professional-grade features (`5/5`).
 
--   **Powerful, Free, and Dependency-Free:** As an open-source tool (`5/5`), Modelio provides full, professional-grade UML support (`5/5`) at no cost and without limitations. This ensures long-term project viability, free from reliance on proprietary or academic-only licenses.
-
-In summary, while other tools may offer greater academic complexity or industrial power, **Modelio is the most pragmatic and efficient choice**, providing all the functionality we need in an accessible, effective, and team-friendly package.
-
+**Summary:** Modelio is the most pragmatic, efficient choice — maximizing productivity and collaboration while meeting all technical requirements.
