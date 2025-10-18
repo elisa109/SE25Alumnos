@@ -176,3 +176,16 @@ Eclipse Papyrus is selected as the standard UML tool for the SE25 project. Despi
 
 In summary, the team values technical quality and deep workflow integration over initial ease of use. **We choose Papyrus as a strategic investment** in the quality and professionalism of our engineering designs.
 
+**Selected Tool:** **Modelio**
+
+**Concise Justification:**
+Modelio is selected as the standard UML tool for the SE25 project because it offers the optimal balance of usability, power, and seamless integration with our modern development workflow.
+
+-   **Immediate Team Productivity:** Modelio stands out for its exceptional ease of installation and use (`5/5` and `4/5`, respectively). Unlike tools with a steep learning curve, it will enable all team members to become productive and create high-quality diagrams efficiently from day one.
+
+-   **Superior Workflow Synergy:** The tool is perfectly aligned with our development practices. Its lightweight and stable performance (`5/5`), excellent Git compatibility (`4/5`) for collaborative work, and high-quality image exports (`5/5`) for documentation meet all our technical requirements without compromise.
+
+-   **Powerful, Free, and Dependency-Free:** As an open-source tool (`5/5`), Modelio provides full, professional-grade UML support (`5/5`) at no cost and without limitations. This ensures long-term project viability, free from reliance on proprietary or academic-only licenses.
+
+In summary, while other tools may offer greater academic complexity or industrial power, **Modelio is the most pragmatic and efficient choice**, providing all the functionality we need in an accessible, effective, and team-friendly package.
+
