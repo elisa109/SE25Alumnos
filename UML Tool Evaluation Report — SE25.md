@@ -163,10 +163,16 @@ Each criterion will be scored on a **1–5 scale**
 
 ## 4. Recommended Tool
 
-**Selected Tool:** **_[Name]_** 
+**Selected Tool:** **Eclipse Papyrus**
 
-**Concise Justification:**  
-- _(Criterion 1)_  
-- _(Criterion 2)_  
-- _(Criterion 3)_  
+**Concise Justification:**
+Eclipse Papyrus is selected as the standard UML tool for the SE25 project. Despite its initial learning curve, its strategic advantages in technical rigor and deep integration with the development ecosystem make it the most robust and professional choice for the long term.
+
+-   **Maximum Standards Compliance and Quality:** A key project priority is to generate design artifacts that are precise, maintainable, and rigorous. Papyrus (`5/5` in UML Support) ensures the strictest adherence to OMG standards, guaranteeing that our diagrams are technically impeccable.
+
+-   **Deep Integration with the Development Environment:** The ability for Papyrus (`4/5` in Integration) to operate directly within the Eclipse IDE is a decisive advantage. It allows the team to work on design models and C++ code in a unified environment, improving consistency and streamlining the workflow.
+
+-   **Robustness and Maturity for Complex Projects:** Papyrus is a mature, stable (`4/5` in Stability), and open-source (`5/5` in Licensing) tool designed for complex engineering projects. The initial time investment in learning the tool will be repaid by its power and extensibility throughout the project's lifecycle.
+
+In summary, the team values technical quality and deep workflow integration over initial ease of use. **We choose Papyrus as a strategic investment** in the quality and professionalism of our engineering designs.
 
