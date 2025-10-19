@@ -167,23 +167,7 @@ Each criterion is scored on a **1–5 scale**.
 
 ## 4. Recommended Tool
 
-### Option A — Eclipse Papyrus
 
-**Selected Tool:** **Eclipse Papyrus**
-
-**Justification:**
-
-Eclipse Papyrus is selected as the standard UML tool for the SE25 project. Despite its learning curve, its rigor and integration with the Eclipse ecosystem make it the most robust and professional long-term choice.
-
-- **Standards Compliance:** Strict adherence to OMG UML standards (`5/5`).
-- **Workflow Integration:** Directly within Eclipse (`4/5`), enabling design and code in one environment.
-- **Robustness:** Mature, stable (`4/5`), open-source (`5/5`), and extensible.
-
-**Summary:** The team prioritizes technical quality and workflow integration over ease of use — a strategic investment in engineering rigor.
-
----
-
-### Option B — Modelio
 
 **Selected Tool:** **Modelio**
 
