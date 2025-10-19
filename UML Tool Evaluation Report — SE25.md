@@ -173,10 +173,11 @@ Each criterion is scored on a **1–5 scale**.
 
 **Justification:**
 
-Modelio offers the optimal balance of usability, performance, and integration with a modern development workflow.
+Modelio was selected as the best UML tool for the SE25 project. It offers a good balance between usability, features, and integration with our development workflow.
 
 - **Ease of Use:** Quick installation (`5/5`) and intuitive learning curve (`4/5`).
 - **Workflow Synergy:** Excellent Git compatibility (`4/5`) and high-quality exports (`5/5`).
 - **Licensing & Support:** 100% open-source with professional-grade features (`5/5`).
+- **Supports all required UML diagrams** (Class, Sequence, State Machine) and follows UML standards.
 
-**Summary:** Modelio is the most pragmatic, efficient choice — maximizing productivity and collaboration while meeting all technical requirements.
+Overall, Modelio is the most practical and efficient choice for our team. It helps us work faster and collaborate better while meeting all technical needs.
